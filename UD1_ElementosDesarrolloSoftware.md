@@ -62,9 +62,11 @@ Para entender el concepto de software vamos a conocer los componentes de un orde
     - De salida: muestran o proyectan información hacia el exterior del ordenador. Ejemplo: monitor.
     - De entrada/salida: sirven para la comunicación de la computadora con el medio externo.
 
-> Menciona un periférico de entrada/salida que conozcas.
+:speech_balloon: Menciona un periférico de entrada/salida que conozcas.
 
 ![Arquitectura ordenador](img/Arquitectura_von_Neumann.png)
+
+:pencil: Hacer actividad 1
 
 ### 1.1 Programa informático
 
@@ -208,6 +210,8 @@ Ventajas de la POO:
 
 Actividad: Clasificar lenguajes de programación estructurados y orientados a objetos
 
+:pencil: Hacer actividad 2
+
 ## 3. Código fuente, objeto y ejecutable
 
 Los programas antes de ser ejecutados deben ser "traducidos" a un idioma que entienda la máquina. Por ello utilizamos programas externos asociados al lenguaje programación del programa y a la arquitectura del ordenador para majenar la "traducción" de los mismos.
@@ -247,6 +251,8 @@ Clasificación de los lenguajes de programación según su forma de ejecución:
     - Funcionamiento similar a lenguajes compilados pero en vez de generar un código objeto genera un “bytecode”.
     - El bytecode puede ser interpretado por cualquier arquitectura que tenga la *máquina virtual* correspondiente.
 
+:pencil: Hacer actividad 3
+
 ## 4. Máquinas virtuales
 
 Una máquina virtual es un software que simula un sistema de computación y puede ejecutar programas como si fuese una computadora real. Distinguimos dos tipos de máquinas virtuales:
@@ -269,7 +275,7 @@ Una máquina virtual es un software que simula un sistema de computación y pued
 
     ![Ejemplo de desarrollo en Java](img/DesarrolloJava.png)
 
-> Hacer AG1: Compilar y ejecutar códigos virtuales.
+:pencil: Hacer actividad 4
 
 ## 5. Desarrollo de software
 
@@ -442,3 +448,5 @@ Los pilares de Scrum son:
     - **Retrospectiva del Sprint (Sprint Retrospective)**: también al final del Sprint, y sirve para que los implicados den sus impresiones sobre el Sprint, y se utiliza para la mejora del proceso.
 
 ![Scrum](img/Scrum.png)
+
+:pencil: Hacer actividad 5
