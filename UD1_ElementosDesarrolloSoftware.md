@@ -210,8 +210,6 @@ Ventajas de la POO:
 
 Actividad: Clasificar lenguajes de programación estructurados y orientados a objetos
 
-:pencil: Hacer actividad 2
-
 ## 3. Código fuente, objeto y ejecutable
 
 Los programas antes de ser ejecutados deben ser "traducidos" a un idioma que entienda la máquina. Por ello utilizamos programas externos asociados al lenguaje programación del programa y a la arquitectura del ordenador para majenar la "traducción" de los mismos.
@@ -251,7 +249,7 @@ Clasificación de los lenguajes de programación según su forma de ejecución:
     - Funcionamiento similar a lenguajes compilados pero en vez de generar un código objeto genera un “bytecode”.
     - El bytecode puede ser interpretado por cualquier arquitectura que tenga la *máquina virtual* correspondiente.
 
-:pencil: Hacer actividad 3
+:pencil: Hacer actividad 2
 
 ## 4. Máquinas virtuales
 
@@ -274,6 +272,8 @@ Una máquina virtual es un software que simula un sistema de computación y pued
     Ejemplo de desarrollo en JAVA
 
     ![Ejemplo de desarrollo en Java](img/DesarrolloJava.png)
+
+:pencil: Hacer actividad 3
 
 :pencil: Hacer actividad 4
 
