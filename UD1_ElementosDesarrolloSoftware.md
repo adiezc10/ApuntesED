@@ -1,6 +1,6 @@
 # Elementos para el desarrollo de software
 
-## Contenidos:
+## Contenidos
 -	Concepto de programa informático
 -	Código fuente, código objeto y código ejecutable; máquinas virtuales.
 -	Tipos de lenguajes de programación.
@@ -10,8 +10,9 @@
 -	Proceso de obtención de código ejecutable a partir del código fuente; herramientas implicadas.
 -	Nuevas metodologías de gestión de proyectos.
 
+[Elementos para el desarrollo de software](#elementos-para-el-desarrollo-de-software)
 - [Elementos para el desarrollo de software](#elementos-para-el-desarrollo-de-software)
-  - [Contenidos:](#contenidos)
+  - [Contenidos](#contenidos)
   - [1. El software y su relación con otras partes del ordenador](#1-el-software-y-su-relación-con-otras-partes-del-ordenador)
     - [1.1 Programa informático](#11-programa-informático)
   - [2. Lenguajes de programación](#2-lenguajes-de-programación)
@@ -28,13 +29,12 @@
     - [5.6 Explotación :boom:](#56-explotación-boom)
     - [5.7 Mantenimiento :wrench:](#57-mantenimiento-wrench)
   - [6. Modelos del ciclo de vida del software](#6-modelos-del-ciclo-de-vida-del-software)
-    - [6.1 Modelo en cascada](#61-modelo-en-cascada)
+    - [6.1 Modelo en cascada :ocean:](#61-modelo-en-cascada-ocean)
     - [6.2 Modelo en cascada con retroalimentación](#62-modelo-en-cascada-con-retroalimentación)
     - [6.3 Modelo incremental](#63-modelo-incremental)
-    - [6.4 Modelo en espiral](#64-modelo-en-espiral)
-    - [6.3 Metodologías ágiles.](#63-metodologías-ágiles)
+    - [6.4 Modelo en espiral :cyclone:](#64-modelo-en-espiral-cyclone)
+    - [6.3 Metodologías ágiles :fallen\_leaf:](#63-metodologías-ágiles-fallen_leaf)
       - [Scrum](#scrum)
-
 
 ## 1. El software y su relación con otras partes del ordenador
 
@@ -372,7 +372,7 @@ Metodologías ágiles
 
 Los modelos del ciclo de vida incluyen fases similares y sólo se diferencian en la forma de presentación.
 
-### 6.1 Modelo en cascada
+### 6.1 Modelo en cascada :ocean:
 Fue el primer modelo en crearse y se caracteriza por ordenar las etapas del proceso de tal forma que el inicio de cada etapa debe esperar a la finalización de la etapa anterior. Al final de cada etapa, se lleva a cabo una revisión que determina si el proyecto está listo para avanzar a la siguiente fase. 
 
 Es sencillo y fácil de asimilar y permite no arrastrar fallos entre etapas.
@@ -389,7 +389,7 @@ Los cambios siguen siendo costosos ya que se realizan al terminar etapas. El cli
 
 ![Modelo en cascada con retroalimentación](img/modeloCascadaRetroalimentacion.jpg)
 
-### 6.3 Modelo incremental
+### 6.3 Modelo incremental 
 Es un modelo de tipo evolutivo que está basado en varios ciclos de vida en cascada aplicados repetidamente.
 
 Este modelo emplea secuencias lineales escalonadas que proporcionan incrementos del producto en el que se añaden nuevas funcionalidades en cada uno de ellos
@@ -400,7 +400,7 @@ Requiere de mucha planificación, tanto administrativa como técnica y es difíc
 
 ![Modelo incermental](img/modeloIncremental.jpg)
 
-### 6.4 Modelo en espiral
+### 6.4 Modelo en espiral :cyclone:
 Las actividades de este modelo se organizan en una espiral, en la que cada bucle o iteración representa un conjunto de actividades. Las actividades no están fijadas a ninguna prioridad, sino que las siguientes se eligen en función del análisis de riesgo, comenzando por el bucle interior.
 
 En cada giro se construye un modelo del sistema completo. Cada entrega es más evolucionada que la anterior.
@@ -409,7 +409,7 @@ Es un buen modelo para el desarrollo de grandes sistemas.
 
 ![Modelo en espiral](img/modeloEspiral.png)
 
-### 6.3 Metodologías ágiles.
+### 6.3 Metodologías ágiles :fallen_leaf:
 El término de metodología ágil nace en el año 2001 como alternativa a los procesos de desarrollo de software tradicionales.
 
 Se basan en el desarrollo iterativo e incremental y buscan satisfacer al cliente mediante entrega de productos tempranas, funcionales y continuas.
