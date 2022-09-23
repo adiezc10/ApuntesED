@@ -10,6 +10,32 @@
 -	Proceso de obtención de código ejecutable a partir del código fuente; herramientas implicadas.
 -	Nuevas metodologías de gestión de proyectos.
 
+- [Elementos para el desarrollo de software](#elementos-para-el-desarrollo-de-software)
+  - [Contenidos:](#contenidos)
+  - [1. El software y su relación con otras partes del ordenador](#1-el-software-y-su-relación-con-otras-partes-del-ordenador)
+    - [1.1 Programa informático](#11-programa-informático)
+  - [2. Lenguajes de programación](#2-lenguajes-de-programación)
+    - [2.1 Lenguajes de programación estructurados](#21-lenguajes-de-programación-estructurados)
+    - [2.2 Lenguajes de programación orientados a objetos](#22-lenguajes-de-programación-orientados-a-objetos)
+  - [3. Código fuente, objeto y ejecutable](#3-código-fuente-objeto-y-ejecutable)
+  - [4. Máquinas virtuales](#4-máquinas-virtuales)
+  - [5. Desarrollo de software](#5-desarrollo-de-software)
+    - [5.1 Análisis :mag:](#51-análisis-mag)
+    - [5.2 Diseño :art:](#52-diseño-art)
+    - [5.3 Codificación :computer:](#53-codificación-computer)
+    - [5.4 Pruebas :white\_check\_mark:](#54-pruebas-white_check_mark)
+    - [5.5 Documentación :page\_facing\_up:](#55-documentación-page_facing_up)
+    - [5.6 Explotación :boom:](#56-explotación-boom)
+    - [5.7 Mantenimiento :wrench:](#57-mantenimiento-wrench)
+  - [6. Modelos del ciclo de vida del software](#6-modelos-del-ciclo-de-vida-del-software)
+    - [6.1 Modelo en cascada](#61-modelo-en-cascada)
+    - [6.2 Modelo en cascada con retroalimentación](#62-modelo-en-cascada-con-retroalimentación)
+    - [6.3 Modelo incremental](#63-modelo-incremental)
+    - [6.4 Modelo en espiral](#64-modelo-en-espiral)
+    - [6.3 Metodologías ágiles.](#63-metodologías-ágiles)
+      - [Scrum](#scrum)
+
+
 ## 1. El software y su relación con otras partes del ordenador
 
 Según la Real Academia Española (RAE) un software es el _"conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora"_.
@@ -377,7 +403,7 @@ Es un buen modelo para el desarrollo de grandes sistemas.
 
 ![Modelo en espiral](img/modeloEspiral.png)
 
-### 6.3 Metodologías ágiles. Scrum
+### 6.3 Metodologías ágiles.
 El término de metodología ágil nace en el año 2001 como alternativa a los procesos de desarrollo de software tradicionales.
 
 Se basan en el desarrollo iterativo e incremental y buscan satisfacer al cliente mediante entrega de productos tempranas, funcionales y continuas.
@@ -390,6 +416,10 @@ Ventajas
 - Mejora la calidad del producto
 
 Algunos ejemplos de metodología ágil son eXtreme Programming (XP), Scrum, Kanban, Open Up…
+
+Esquema general de una metodología ágil para desarrollo de software:
+
+![Esquema metodología ágil](img/Esquema_general_de_una_metodologia_agil.png)
 
 #### Scrum
 Es una metodología ágil para la gestión de todo tipo de proyectos.
