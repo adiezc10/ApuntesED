@@ -275,7 +275,7 @@ Una máquina virtual es un software que simula un sistema de computación y pued
 
 :pencil: Hacer actividad 3
 
-:pencil: Hacer actividad 4
+:pencil: Hacer actividad 4 (hacer al final de la unidad)
 
 ## 5. Desarrollo de software
 
