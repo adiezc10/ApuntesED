@@ -3,14 +3,14 @@
 ## Índice
 - [Instalación y uso de entornos de desarrollo](#instalación-y-uso-de-entornos-de-desarrollo)
   - [Índice](#índice)
-  - [1. Introducción a los entosnos de desarrollo](#1-introducción-a-los-entosnos-de-desarrollo)
+  - [1. Introducción a los entornos de desarrollo](#1-introducción-a-los-entornos-de-desarrollo)
     - [EDI libres y propietarios](#edi-libres-y-propietarios)
   - [2. Componentes de un entorno de desarrollo](#2-componentes-de-un-entorno-de-desarrollo)
   - [3. Instalación y uso de entornos de desarrollo.](#3-instalación-y-uso-de-entornos-de-desarrollo)
   - [4. Módulos.](#4-módulos)
 
 
-## 1. Introducción a los entosnos de desarrollo
+## 1. Introducción a los entornos de desarrollo
 
 Un **Entorno de Desarrollo Integrado** (EDI o IDE en inglés, Integrated Development Environment), es un tipo de software compuesto por un conjunto de herramientas de programación. El principal onjetivo de los Entornos de Desarrollo es optimizar el proceso de programación.
 
