@@ -12,7 +12,7 @@
 
 ## 1. Introducción a los entornos de desarrollo
 
-Un **Entorno de Desarrollo Integrado** (EDI o IDE en inglés, Integrated Development Environment), es un tipo de software compuesto por un conjunto de herramientas de programación. El principal onjetivo de los Entornos de Desarrollo es optimizar el proceso de programación.
+Un **Entorno de Desarrollo Integrado** (EDI o IDE en inglés, Integrated Development Environment), es un tipo de software compuesto por un conjunto de herramientas de programación. El principal objetivo de los Entornos de Desarrollo es optimizar el proceso de programación.
 
 La principales tareas que nos facilita el uso de un EDI son:
 - La ejecución en modo depuración, para corregir errores.
@@ -44,8 +44,6 @@ Según su licencia de uso podemos clasificar los entornos de desarrollo en dos g
 > Actividad 1
 
 ## 2. Componentes de un entorno de desarrollo
-
-desarrollar componentes
 
 Generalizando, IDE se compone de las siguientes herramientas:
 - **Editor de textos**: Resalta y colorea la sintaxis, tiene la función de autocompletar código, ayuda y listado de parámetros de funciones y métodos de clase. Inserción automática de paréntesis, corchetes, tabulaciones y espaciados.
