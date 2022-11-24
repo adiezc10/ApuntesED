@@ -10,7 +10,6 @@
     - [3.4. Instrucciones Git](#34-instrucciones-git)
   - [4. GitHub](#4-github)
 
-
 ## 1. ¿Qué es el control de versiones?
 Se llama __control de versiones__ a la gestión de los diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo. Una versión, revisión o edición de un producto, es el estado en el que se encuentra el mismo en un momento dado de su desarrollo o modificación.
 
@@ -102,7 +101,3 @@ El grupo puede ser desde un reducido equipo de trabajo para un proyecto empresar
 Puedes consultar más información sobre GitHub en su web [github.com](https://github.com/)
 
 Ver vídeo explicativo del funcionamiento de GitHub: [What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
-
-
-
-
