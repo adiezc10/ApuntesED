@@ -112,7 +112,7 @@ Modelo en V
 
 ## 6. Pruebas automáticas
 
-Práctica JUnit 5
+Práctica JUnit 5 
 
 ### 6.1. Tratamiento de excepciones
 
