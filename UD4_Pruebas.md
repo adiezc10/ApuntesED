@@ -78,7 +78,7 @@ Modelo en V
 ## 3. Diseño de casos de prueba
 
 
-> Práctica caja blanca
+> Práctica 1: caja blanca
 
 ### 3.1. Pruebas estructurales o de caja blanca
 
@@ -91,7 +91,7 @@ Modelo en V
 
 ### 3.2. Pruebas funcionales o de caja negra
 
-> Práctica caja negra
+> Práctica 2: caja negra
 
 #### Particiones
 
@@ -101,18 +101,18 @@ Modelo en V
 
 ### 3.3. Aplicación de las técnicas de dinseño de casos de prueba
 
-> Practica combinar caja blanca y negra
+> Practica 3: combinar caja blanca y negra
 
 ## 4. Documentación de pruebas
 
 
 ## 5. Herramientas de depuración
 
-> Práctica debugger
+> Práctica 4: debugger
 
 ## 6. Pruebas automáticas
 
-Práctica JUnit 5 
+Práctica 5: JUnit 5 
 
 ### 6.1. Tratamiento de excepciones
 
