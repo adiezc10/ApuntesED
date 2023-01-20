@@ -25,7 +25,7 @@ El objetivo de las pruebas de software es la validación y verificación del mis
 >
 > Vídeo: [TBT Launch: Ariane 5 Flight 501 (6-4-1996)](https://www.youtube.com/watch?v=fCnO-UYF3co).
 
-Esisten dos aspectos a los que hay que prestar atención para realizar pruebas en el software, en ellos hay que considerar:
+Existen dos aspectos a los que hay que prestar atención para realizar pruebas en el software, en ellos hay que considerar:
 1. La **estrategia de aplicación de las pruebas**, donde se fijan los elementos que van testear. (Punto 2 de esta unidad)
 2. Las **técnicas de diseño de casos de prueba** que se van a utilizar para cada uno de los elementos seleccionados. (Punto 3 de esta unidad)
 
