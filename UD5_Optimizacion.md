@@ -192,6 +192,7 @@ final double area = alto * ancho;
 System.out.println(area);
 ```
 - __Eliminar asignaciones a parámetros__:Un método recibe parámetros. Este problema surge cuando uno de esos parámetros cambia de valor (porque se le modifica en el código) dentro del método.La solución pasa por utilizar una variable temporal.
+
 ```Java
 //sin refactorizar
 int discount(int inputVal, int quantity) {
@@ -210,6 +211,7 @@ int discount(int inputVal, int quantity) {
 }
 ```
 - __Mover método__:Un método está declarado en una clase, pero se usa más en otra.La solución es declarar el método en la clase qué más se use y en la clase en la que estaba inicialmente declarado, se puede hacer distintas cosas: declarar otro similar, dejar el código sin método si solo se usa una vez o borrarlo completamente si no se usa. 
+
 ```Java
 //sin refactorizar
 public class BankAccount
@@ -252,6 +254,7 @@ public class AccountInterest
 }
 ```
 - __Descomponer un condicional__:Tenemos condicionales demasiado complejos con varias condiciones en una unidos por operadores lógicos. Solución, separar los condicionales o hacer un método que haga la comprobación y se vea más claro.
+
 ```Java
 //sin refactorizar
 if (date.before(SUMMER_START) || date.after(SUMMER_END)) {
@@ -269,6 +272,7 @@ else {
 }
 ```
 - __Consolidar expresiones condicionales__:Varios condicionales nos llevan al mismo resultado. Solución: Combinarlos en una sola expresión.
+
 ```Java
 //sin refactorizar
 double disabilityAmount() {
@@ -295,6 +299,7 @@ double disabilityAmount() {
 }
 ```
 - __Reemplazar condicional por polimorfismo__: Tenemos una expresión condicional usada para elegir entre tipos de un objeto para llevar a cabo comportamientos diferentes. La solución pasa por hacer la clase original abstracta y crear subclases de ella utilizando las características de la expresión condicional.
+
 ```Java
 //sin refactorizar
 class Bird {
@@ -333,6 +338,7 @@ class NorwegianBlue extends Bird {
 }
 ```
 - __Reemplazar array por objeto__:Un array que tiene distintos tipos de datos.Debemos crear un objeto con los datos del array.
+
 ```Java
 //sin refactorizar
 String[] row = new String[2];
@@ -369,6 +375,7 @@ class TelephoneNumber {
 - __Mover del interior a otro nivel__: Consiste en mover una clase interna a un nivel superior en la jerarquía.
 - __Borrado seguro__: Se debe comprobar, que cuándo un elemento del código ya no es necesario, se han borrado todas las referencias a él que había en cualquier parte del proyecto. 
 - __Campos encapsulados__: Se aconseja crear métodos getter y setter, (de asignación y de consulta) para cada campo que se defina en una clase. Cuando sea necesario acceder o modificar el valor de un campo, basta con invocar al método getter o setter según convenga.
+
 ```Java
 // sin refactorizar
 class Persona {
