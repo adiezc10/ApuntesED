@@ -28,7 +28,8 @@ Refactorizar nos ayuda a tener un código fuente sencillo y bien estructurado y 
 
 <div class="page"/>
 
- Ejemplo
+ Ejemplo:
+
 ```Java
 // sin aplicar refactorizacion
 void printOwing(){
@@ -100,6 +101,7 @@ int cantidad;
 int[] array = { 0, 1, 2, 3 };
 ```
 - Los arrays tienen los corchetes [ ] unidos a su tipo de datos:
+
 ```Java
 String[] nombres; // correcto
 String nombres[]; // incorrecto
