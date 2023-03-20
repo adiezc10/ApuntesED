@@ -101,6 +101,7 @@ Existen muchas herramientas para crear diagramas de clases. Algunas de las más 
 - Modelio
 
 > Actividad: diagrams.net
+
 > Actividad: Modelio
 
 ## 7. Generación de código a partir de diagramas de clases
