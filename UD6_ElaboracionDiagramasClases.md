@@ -17,10 +17,10 @@
     - [4.1 Cardinalidad](#41-cardinalidad)
     - [4.2 Relación de herencia](#42-relación-de-herencia)
     - [4.3 Agregación y composición](#43-agregación-y-composición)
-  - [5. Tipos de clases de análisis](#5-tipos-de-clases-de-análisis)
-  - [6. Herramientas para la creación de diagramas de clases](#6-herramientas-para-la-creación-de-diagramas-de-clases)
-  - [7. Generación de código a partir de diagramas de clases](#7-generación-de-código-a-partir-de-diagramas-de-clases)
-  - [8. Generación de diagramas de clases a partir de código (ingeniería inversa)](#8-generación-de-diagramas-de-clases-a-partir-de-código-ingeniería-inversa)
+      - [4.4 Atributos de enlace](#44-atributos-de-enlace)
+  - [5. Herramientas para la creación de diagramas de clases](#5-herramientas-para-la-creación-de-diagramas-de-clases)
+  - [6. Generación de código a partir de diagramas de clases](#6-generación-de-código-a-partir-de-diagramas-de-clases)
+  - [7. Generación de diagramas de clases a partir de código (ingeniería inversa)](#7-generación-de-diagramas-de-clases-a-partir-de-código-ingeniería-inversa)
 
 El proceso de construcción de software tiene como finalidad solucionar problemas utilizando herramientas informáticas y, para obtener buenos resultados, requiere un proceso previo de análisis y especificación de requisitos. La programación orientada a objetos se enfoca en simular elementos de la realidad del problema de manera cercana a través de la abstracción de objetos. Estos objetos se caracterizan por tener un conjunto de atributos que los definen y un conjunto de operaciones que marcan su comportamiento.
 
@@ -183,39 +183,78 @@ Es posible establecer relaciones unarias de una clase consigo misma. En el ejemp
 
 ![](img/Clases2.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
 ### 4.1 Cardinalidad
+La cardinalidad de una relación representa cuantos objetos de una clase se van a relacionar con objetos de otra clase. En una relación hay dos cardinalidades, una para cada extremo de la relación y pueden tener los siguientes valores:
+
+| Cardinalidad | Significado |
+| ------------ | ----------- | 
+| 1            | una |  
+| 0..1         | cero o una | 
+| M..N         | de M a N  | 
+| N            | N | 
+| *            | de cero a varias | 
+| 1..*         | de una a varias | 
+
+Por ejemplo, la siguiente relación quiere decir que los alumnos se matriculan en los módulos, en concreto, que un alumno se puede matricular en uno a más módulos y que un módulo puede tener ningún alumno o varios.
+
+![](img/Clases3.png)
+
+En  este ejemplo vemos que un profesor puede impartir uno o varios módulos, mientras que un módulo es impartido sólo por un profesor.
+
+![](img/Clases4.png)
 
 ### 4.2 Relación de herencia
 
+La herencia es una propiedad que permite a los objetos ser construidos a partir de otros objetos, es decir, la capacidad de un objeto para utilizar estructuras de datos y métodos presentes en sus antepasados.
+
+El objetivo principal de la herencia es la reutilización, poder utilizar código desarrollado con anterioridad. La herencia supone una clase base y una jerarquía de clases que contiene las clases derivadas. Las clases derivadas pueden heredar el código y los datos de su clase base, añadiendo su propio código especial y datos, incluso cambiar aquellos elementos de la clase base que necesitan ser diferentes, es por esto que los atributos, métodos y relaciones de una clase se muestran en el nivel más alto de la jerarquía en el que son aplicables.
+
+Tipos de herencia:
+1.	Herencia simple: Una clase puede tener sólo un ascendente. Es decir, una subclase puede heredar datos y métodos de una única clase base.
+2.	Herencia múltiple: Una clase puede tener más de un ascendente inmediato, adquirir datos y métodos de más de una clase.
+
+La herencia se representa en el diagrama de clases como una asociación en la que el extremo de la clase base tiene un triángulo.
+
+Ejemplo: Podemos utilizar la relación de herencia para crear una clase nueva que se llame Persona y que recoja las características comunes de profesor y alumno. Persona será la clase base y Profesor y Alumno las clases derivadas. 
+
+Como los atributos Nombre, FechaNacimiento y correoElectronico se heredan de la clase base no hace falta que aparezcan en las clases derivadas, por lo que las hemos eliminado. Después podemos añadir atributos o métodos propios a las clases derivadas. 
+
+![](img/Clases5.png)
+
 ### 4.3 Agregación y composición
+Muchas veces una determinada entidad existe como un conjunto de otras entidades. En este tipo de relaciones un objeto componente se integra en un objeto compuesto. La orientación a objetos recoge este tipo de relaciones como dos conceptos: la agregación y la composición.
 
-## 5. Tipos de clases de análisis
+La agregación es una asociación binaria que representa una relación todo-parte (pertenece a, tiene un, es parte de). Los elementos parte pueden existir sin el elemento contenedor y no son propiedad suya. Por ejemplo, un centro comercial tiene clientes o un equipo tiene unos miembros. El tiempo de vida de los objetos no tiene por qué coincidir.
+
+En el siguiente caso, tenemos un ordenador que se compone de piezas sueltas que pueden ser sustituidas y que tienen entidad por sí mismas, por lo que se representa mediante relaciones de agregación. Utilizamos la agregación porque es posible que una caja, ratón o teclado o una memoria RAM existan con independencia de que pertenezcan a un ordenador o no.
+
+![](img/Clases6.png)
+
+La composición es una agregación fuerte en la que una instancia ‘parte’ está relacionada, como máximo, con una instancia ‘todo’ en un momento dado, de forma que cuando un objeto ‘todo’ es eliminado, también son eliminados sus objetos ‘parte’. Por ejemplo: un rectángulo tiene cuatro vértices, un centro comercial está organizado mediante un conjunto de secciones de venta...
+
+![](img/Clases7.png)
+
+Para modelar la estructura de un ciclo formativo vamos a usar las clases Módulo, Competencia y Ciclo que representan lo que se puede estudiar en Formación Profesional y su estructura lógica. Un ciclo formativo se compone de una serie de competencias que se le acreditan cuando supera uno o varios módulos formativos.
+
+Dado que si eliminamos el ciclo las competencias no tienen sentido, y lo mismo ocurre con los módulos hemos usado relaciones de composición. Si los módulos o competencias pudieran seguir existiendo sin su contenedor habríamos utilizado relaciones de agregación.
+
+Estas relaciones se representan con un rombo en el extremo de la entidad contenedora. En el caso de la agregación es de color blanco y para la composición negro. Como en toda relación hay que indicar la cardinalidad.
+
+#### 4.4 Atributos de enlace
+Es posible que tengamos alguna relación en la que sea necesario añadir algún tipo de información que la complete de alguna manera. Cuando esto ocurre podemos añadir atributos a la relación.
 
 
-## 6. Herramientas para la creación de diagramas de clases
+## 5. Herramientas para la creación de diagramas de clases
 Existen muchas herramientas para crear diagramas de clases. Algunas de las más conocidas son:
 - **draw.io**: Destaca por su sencillez. Simplemente accediendo a draw.io en su navegador tienes un lienzo vacío para comenzar a dibujar. Viene con formas para modelado UML básico, ER y BPMN. Aún así, es un claro ejemplo de una herramienta que no entiende realmente la semántica de lo que estás dibujando, así que básicamente puedes hacer lo que quieras y utilizarlo para construir tus diagramas uml online gratis muy extraños que no cumplen a rajatabla las normas. También falla en el aspecto de colaboración, pero se integra bien con Google Drive, Dropbox, OneDrive y otros para guardar automáticamente los modelos en su ubicación preferida. Draw.io es de código abierto y se ha creado utilizando la biblioteca mxGraph.
-- **Modelio**:
+- **Modelio**: es una herramienta de modelado que ofrece una amplia gama de funcionalidades basadas en estándares comúnmente utilizados para la arquitectura empresarial, el desarrollo de software y la ingeniería de sistemas.
 
 > Actividad: draw.io
 
-> Actividad: Modelio
+> Actividad: Modelio (pendiente de probar)
 
-## 7. Generación de código a partir de diagramas de clases
+## 6. Generación de código a partir de diagramas de clases
 
 
-
-## 8. Generación de diagramas de clases a partir de código (ingeniería inversa)
+## 7. Generación de diagramas de clases a partir de código (ingeniería inversa)
 
