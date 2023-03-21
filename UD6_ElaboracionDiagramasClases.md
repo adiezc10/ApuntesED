@@ -14,11 +14,9 @@
         - [Diagramas de interacción.](#diagramas-de-interacción)
   - [3. Clases, atributos, métodos y visibilidad](#3-clases-atributos-métodos-y-visibilidad)
   - [4. Relaciones entre clases](#4-relaciones-entre-clases)
-    - [4.1 Agregación](#41-agregación)
-    - [4.2 Composición](#42-composición)
-    - [4.3 Especialización y generalización](#43-especialización-y-generalización)
-    - [4.4 Asociación](#44-asociación)
-    - [4.5 Realización](#45-realización)
+    - [4.1 Cardinalidad](#41-cardinalidad)
+    - [4.2 Relación de herencia](#42-relación-de-herencia)
+    - [4.3 Agregación y composición](#43-agregación-y-composición)
   - [5. Tipos de clases de análisis](#5-tipos-de-clases-de-análisis)
   - [6. Herramientas para la creación de diagramas de clases](#6-herramientas-para-la-creación-de-diagramas-de-clases)
   - [7. Generación de código a partir de diagramas de clases](#7-generación-de-código-a-partir-de-diagramas-de-clases)
@@ -170,16 +168,38 @@ La clase Cuenta anteriormente representada se puede modificar añadiendo la info
 ![](img/ClaseCuenta1.png)
 
 ## 4. Relaciones entre clases
+Una relación es una conexión entre dos clases que incluimos en el diagrama cuando aparece algún tipo de relación entre ellas en el dominio del problema.
 
-### 4.1 Agregación
+Se representan como una línea continua. Los mensajes "navegan" por las relaciones entre clases, es decir, los mensajes se envían entre objetos de clases relacionadas, normalmente en ambas direcciones, aunque a veces la definición del problema hace necesario que se navegue en una sola dirección, entonces la línea finaliza en punta de flecha.
 
-### 4.2 Composición
+Las relaciones se caracterizan por su cardinalidad, que representa cuantos objetos de una clase se pueden involucrar en la relación, y pueden ser:
+- De herencia.
+- De composición.
+- De agregación.
 
-### 4.3 Especialización y generalización
+![](img/Clases1.png)
 
-### 4.4 Asociación
+Es posible establecer relaciones unarias de una clase consigo misma. En el ejemplo se ha rellenado en la especificación de la relación los roles y la multiplicidad.
 
-### 4.5 Realización
+![](img/Clases2.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 4.1 Cardinalidad
+
+### 4.2 Relación de herencia
+
+### 4.3 Agregación y composición
 
 ## 5. Tipos de clases de análisis
 
