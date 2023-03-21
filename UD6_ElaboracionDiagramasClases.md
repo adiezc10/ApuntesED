@@ -84,30 +84,31 @@ Los elementos estructurales de un modelo son su parte estática y representan co
 
 ![](img/ArtefactoNavegadorWeb.png)
 
-- Nodo: es un elemento físico que representa un recurso computacional, por ejemplo, un servidor web.
+- Nodo: es un elemento físico que representa un recurso computacional, por ejemplo, un servidor web. Se representa con un cubo sobre el que se escribe el recurso que representa.
 
 #### Elementos de comportamiento
 Los elementos de comportamiento representan las partes dinámicas de un modelo UML. Sirven para conectar los elementos estructurales. Existen tres tipos:
-- Interacción:
+- Interacción: engloba un cojunto de mensajes intercambiados entre objetos con un propósito concreto. Un mensaje se representa gráficamente por medio de una flecha con el nombre de la operación sobre ella.
 
 ![](img/InteraccionFlecha.png)
 
-- Máquina de estados:
+- Máquina de estados: especifica el comportamiento de un objeto mediante las secuencias de estados por los que pasa. 
 
 ![](img/MaquinaEstados.png)
 
-- Actividad:
+- Actividad: especifica los pasos que ejecuta un proceso. En una actividad lo más importante es la secuencia o el flujo de pasos, sin importar qué objeto ejecuta cada paso.
 
 ![](img/ActividadReproducir.png)
 
 #### Elementos de agrupación
-Son los elementos organizativos de los modelos UML.
+Son los elementos organizativos de los modelos UML. Los elementos básicos de agrupación son los paquetes pero existen otros como los frameworks.
 
-![](img/AgrupacionPlataforma.png)
+![Paquete llamado Plataforma de Streaming](img/AgrupacionPlataforma.png)
 
 #### Elementos de anotación
+Son comentarios que sirven como explicación de los modelos UML creados.
 
-![](img/AnotacionEsquina.png)
+![Nota UML](img/AnotacionEsquina.png)
 
 ### 2.2 Diagramas UML
 
@@ -146,6 +147,28 @@ Los propósitos de una clase son definir las abstracciones y favorecer la modula
 
 ![](img/POO.png)
 
+La información sobre las clases se representa mediante diagramas de clases utilizando notación UML. Cada clase se representa mediante un restánculo con tres zonas:
+- En la zona superior se indica el nombre de la clase.
+- En la zona central se incluye la información sobre los atributos de la clase.
+- En la zona inferior se incluye la información sobre los métodos de la clase.
+
+![Clase cuenta con sus métodos y atributos](img/ClaseCuenta.png)
+
+Al inicio del diseño de software no es necesario incluir toda la información en los diagramas UML pero según avanza el proceso de diseño se va añadiendo información a las clases que forman el sistema. Entre la información que se puede añadir a una clase encontramos el modificador de acceso para cada atributo y el tipo de dato.
+
+Se pueden establecer diferentes niveles de encapsulación para los atributos y métodos de una clase en función del acceso que queremos darle a cada uno:
+
+| Visibilidad | Significado | Java    | UML     | 
+| ----------- | ----------  | ------- | ------- |
+| Pública | Se puede acceder desde cualquier lugar. | public    | +     | 
+| Protegida | Se puede acceder desde la propia clase o desde otra que herede de ella. | protected    | #     | 
+| Por defecto | Se puede acceder desde cualquier clase en el mismo paquete. |       | ~     | 
+| Privada | Se puede acceder desde la propia clase | private    | -     | 
+
+La clase Cuenta anteriormente representada se puede modificar añadiendo la información de control de acceso y tipo de dato resultando:
+
+![](img/ClaseCuenta1.png)
+
 ## 4. Relaciones entre clases
 
 ### 4.1 Agregación
@@ -171,6 +194,7 @@ Existen muchas herramientas para crear diagramas de clases. Algunas de las más 
 > Actividad: Modelio
 
 ## 7. Generación de código a partir de diagramas de clases
+
 
 
 ## 8. Generación de diagramas de clases a partir de código (ingeniería inversa)
