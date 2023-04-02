@@ -3,11 +3,8 @@
 - [UD6 - Elaboración de diagramas de clases](#ud6---elaboración-de-diagramas-de-clases)
   - [1. Conceptos básicos de la orientación a objetos](#1-conceptos-básicos-de-la-orientación-a-objetos)
   - [2. UML](#2-uml)
-    - [2.1 Elementos UML](#21-elementos-uml)
+    - [2.1 Elementos UML para diagramas de clases](#21-elementos-uml-para-diagramas-de-clases)
       - [Elementos estructurales](#elementos-estructurales)
-      - [Elementos de comportamiento](#elementos-de-comportamiento)
-      - [Elementos de agrupación](#elementos-de-agrupación)
-      - [Elementos de anotación](#elementos-de-anotación)
     - [2.2 Diagramas UML](#22-diagramas-uml)
       - [Diagramas estructurales](#diagramas-estructurales)
       - [Diagramas de comportamiento](#diagramas-de-comportamiento)
@@ -19,8 +16,6 @@
     - [4.3 Agregación y composición](#43-agregación-y-composición)
       - [4.4 Atributos de enlace](#44-atributos-de-enlace)
   - [5. Herramientas para la creación de diagramas de clases](#5-herramientas-para-la-creación-de-diagramas-de-clases)
-  - [6. Generación de código a partir de diagramas de clases](#6-generación-de-código-a-partir-de-diagramas-de-clases)
-  - [7. Generación de diagramas de clases a partir de código (ingeniería inversa)](#7-generación-de-diagramas-de-clases-a-partir-de-código-ingeniería-inversa)
 
 El proceso de construcción de software tiene como finalidad solucionar problemas utilizando herramientas informáticas y, para obtener buenos resultados, requiere un proceso previo de análisis y especificación de requisitos. La programación orientada a objetos se enfoca en simular elementos de la realidad del problema de manera cercana a través de la abstracción de objetos. Estos objetos se caracterizan por tener un conjunto de atributos que los definen y un conjunto de operaciones que marcan su comportamiento.
 
@@ -53,7 +48,7 @@ UML permite a los equipos de desarrollo visualizar el trabajo realizado en esque
 - Los mejores modelos son aquellos que están estrechamente vinculados con la realidad del sistema que se está modelando.
 - Es recomendable utilizar un conjunto de modelos casi independientes y desde múltiples puntos de vista para abordar cualquier sistema complejo, ya que un único modelo o vista no es suficiente.
 
-### 2.1 Elementos UML
+### 2.1 Elementos UML para diagramas de clases
 En el lenguaje UML podemos encontrar cuatro tipos de elementos, pueden ser estructurales, de comportamiento, de agrupación o de anotación. A continuación se explican los elementos de UML más importantes junto a su representación.
 
 #### Elementos estructurales
@@ -66,47 +61,11 @@ Los elementos estructurales de un modelo son su parte estática y representan co
 
 ![Interfaz reproductor con sus operaciones.](img/InterfaceReproductor.png)
 
-- Colaboración: define una interacción y se trata de un conjunto de roles y otros elementos que colaboran para proporcionar un comportamiento cooperativo mayor que la suma de los comportamientos de sus elementos.
-
-![](img/ColaboracionInforme.png)
-
-- Caso de uso: es la descripción de una acción realizada por un sistema, clase o componente desde el punto de vista del usuario.
-
-![](img/CasoUsoAnadirPeli.png)
-
-- Componente: representa una parte modular de un sistema. El sistema se define partiendo de los componentes que están conectados entre sí. La implementación de un componente puede expresarse conectando partes y conectores, y las partes pueden incluir componentes más pequeños.
-
-![](img/ComponenteFormulario.png)
-
 - Artefacto: es la especificación de un componente físico de información que es usado o producido por un proceso de desarrollo de software, o por el desarrollo y operación de un sistema. 
 
 ![](img/ArtefactoNavegadorWeb.png)
 
 - Nodo: es un elemento físico que representa un recurso computacional, por ejemplo, un servidor web. Se representa con un cubo sobre el que se escribe el recurso que representa.
-
-#### Elementos de comportamiento
-Los elementos de comportamiento representan las partes dinámicas de un modelo UML. Sirven para conectar los elementos estructurales. Existen tres tipos:
-- Interacción: engloba un cojunto de mensajes intercambiados entre objetos con un propósito concreto. Un mensaje se representa gráficamente por medio de una flecha con el nombre de la operación sobre ella.
-
-![](img/InteraccionFlecha.png)
-
-- Máquina de estados: especifica el comportamiento de un objeto mediante las secuencias de estados por los que pasa. 
-
-![](img/MaquinaEstados.png)
-
-- Actividad: especifica los pasos que ejecuta un proceso. En una actividad lo más importante es la secuencia o el flujo de pasos, sin importar qué objeto ejecuta cada paso.
-
-![](img/ActividadReproducir.png)
-
-#### Elementos de agrupación
-Son los elementos organizativos de los modelos UML. Los elementos básicos de agrupación son los paquetes pero existen otros como los frameworks.
-
-![Paquete llamado Plataforma de Streaming](img/AgrupacionPlataforma.png)
-
-#### Elementos de anotación
-Son comentarios que sirven como explicación de los modelos UML creados.
-
-![Nota UML](img/AnotacionEsquina.png)
 
 ### 2.2 Diagramas UML
 
@@ -244,17 +203,27 @@ Estas relaciones se representan con un rombo en el extremo de la entidad contene
 Es posible que tengamos alguna relación en la que sea necesario añadir algún tipo de información que la complete de alguna manera. Cuando esto ocurre podemos añadir atributos a la relación.
 
 
+
+
+
+
+
+
+
+
 ## 5. Herramientas para la creación de diagramas de clases
 Existen muchas herramientas para crear diagramas de clases. Algunas de las más conocidas son:
-- **draw.io**: Destaca por su sencillez. Simplemente accediendo a draw.io en su navegador tienes un lienzo vacío para comenzar a dibujar. Viene con formas para modelado UML básico, ER y BPMN. Aún así, es un claro ejemplo de una herramienta que no entiende realmente la semántica de lo que estás dibujando, así que básicamente puedes hacer lo que quieras y utilizarlo para construir tus diagramas uml online gratis muy extraños que no cumplen a rajatabla las normas. También falla en el aspecto de colaboración, pero se integra bien con Google Drive, Dropbox, OneDrive y otros para guardar automáticamente los modelos en su ubicación preferida. Draw.io es de código abierto y se ha creado utilizando la biblioteca mxGraph.
-- **Modelio**: es una herramienta de modelado que ofrece una amplia gama de funcionalidades basadas en estándares comúnmente utilizados para la arquitectura empresarial, el desarrollo de software y la ingeniería de sistemas.
+- **draw.io**: Destaca por su sencillez. Simplemente accediendo a draw.io en el navegador tienes un lienzo vacío para comenzar a dibujar. Viene con formas para modelado UML básico, ER y BPMN. Se integra con Google Drive, Dropbox, OneDrive y otros sistemas para guardar automáticamente los modelos en la nube. Draw.io es de código abierto y se ha creado utilizando la biblioteca mxGraph.
 
-> Actividad: draw.io
-
-> Actividad: Modelio (pendiente de probar)
-
-## 6. Generación de código a partir de diagramas de clases
+> Actividad 1: relaciones entre clases.
 
 
-## 7. Generación de diagramas de clases a partir de código (ingeniería inversa)
+> Actividad 2: creación de diagramas de clase.
+
+
+> Actividad 3: generración de código a partir de diagramas de clases.
+
+
+> Actividad 4: generación de diagramas de clases a partir de código.
+
 
