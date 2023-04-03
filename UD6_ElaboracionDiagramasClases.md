@@ -11,6 +11,7 @@
         - [Diagramas de interacción.](#diagramas-de-interacción)
   - [3. Clases, atributos, métodos y visibilidad](#3-clases-atributos-métodos-y-visibilidad)
   - [4. Relaciones entre clases](#4-relaciones-entre-clases)
+      - [4.1 Navegabilidad](#41-navegabilidad)
     - [4.1 Cardinalidad](#41-cardinalidad)
     - [4.2 Relación de herencia](#42-relación-de-herencia)
     - [4.3 Agregación y composición](#43-agregación-y-composición)
@@ -132,15 +133,32 @@ Una relación es una conexión entre dos clases que incluimos en el diagrama cua
 Se representan como una línea continua. Los mensajes "navegan" por las relaciones entre clases, es decir, los mensajes se envían entre objetos de clases relacionadas, normalmente en ambas direcciones, aunque a veces la definición del problema hace necesario que se navegue en una sola dirección, entonces la línea finaliza en punta de flecha.
 
 Las relaciones se caracterizan por su cardinalidad, que representa cuantos objetos de una clase se pueden involucrar en la relación, y pueden ser:
+- De asociación
 - De herencia.
 - De composición.
 - De agregación.
+
+El tipo de relación más sencilla es la de asociación, son clases que que no cumplen con las características de una herencia, composicion o agregación.
 
 ![](img/Clases1.png)
 
 Es posible establecer relaciones unarias de una clase consigo misma. En el ejemplo se ha rellenado en la especificación de la relación los roles y la multiplicidad.
 
 ![](img/Clases2.png)
+
+Una **clase de asociación** es una clase que forma parte de una relación de asociación entre otras dos clases. Se puede adjuntar una clase de asociación a una relación de asociación para proporcionar información adicional sobre la relación. Una clase de asociación es idéntica a otras clases y puede contener operaciones, atributos, así como otras asociaciones.
+
+Por ejemplo, una clase llamada Estudiante representa a un estudiante y tiene una asociación con una clase llamada Curso, que representa un curso educativo. La clase Estudiante puede inscribirse en un curso. Una clase de asociación llamada Inscripción define aún más la relación entre las clases de Estudiante y Curso al proporcionar información de sección, calificación y semestre relacionada con la relación de asociación.
+
+Como ilustra la siguiente figura, una clase de asociación está conectada a una asociación mediante una línea punteada.
+
+![](img/Matricula.png)
+
+#### 4.1 Navegabilidad
+
+En relaciones de asociación, composición y agregación también se puede indicar su **navegabilidad**, esto indica mediante una flecha el sentido en el que se puede acceder a la información desde una de las clases que interviene. Por ejemplo, en el siguiente diagrama se muestra una asociación entre Cliente y Pedido navegable únicamente de Cliente a Pedido, esto indica que partiendo de un cliente podemos acceder a todos los pedidos que ha realizado.
+
+![](img/ClientePedido.png)
 
 ### 4.1 Cardinalidad
 La cardinalidad de una relación representa cuantos objetos de una clase se van a relacionar con objetos de otra clase. En una relación hay dos cardinalidades, una para cada extremo de la relación y pueden tener los siguientes valores:
@@ -200,16 +218,9 @@ Dado que si eliminamos el ciclo las competencias no tienen sentido, y lo mismo o
 Estas relaciones se representan con un rombo en el extremo de la entidad contenedora. En el caso de la agregación es de color blanco y para la composición negro. Como en toda relación hay que indicar la cardinalidad.
 
 #### 4.4 Atributos de enlace
-Es posible que tengamos alguna relación en la que sea necesario añadir algún tipo de información que la complete de alguna manera. Cuando esto ocurre podemos añadir atributos a la relación.
+Es posible que tengamos alguna relación en la que sea necesario añadir algún tipo de información que la complete de alguna manera. Cuando esto ocurre podemos añadir atributos a la relación mediante texto.
 
-
-
-
-
-
-
-
-
+![](img/incluye.png)
 
 ## 5. Herramientas para la creación de diagramas de clases
 Existen muchas herramientas para crear diagramas de clases. Algunas de las más conocidas son:
