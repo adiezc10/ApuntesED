@@ -12,8 +12,8 @@
   - [3. Clases, atributos, métodos y visibilidad](#3-clases-atributos-métodos-y-visibilidad)
   - [4. Relaciones entre clases](#4-relaciones-entre-clases)
       - [4.1 Navegabilidad](#41-navegabilidad)
-    - [4.1 Cardinalidad](#41-cardinalidad)
-    - [4.2 Relación de herencia](#42-relación-de-herencia)
+    - [4.2 Cardinalidad](#42-cardinalidad)
+    - [4.3 Relación de herencia](#43-relación-de-herencia)
     - [4.3 Agregación y composición](#43-agregación-y-composición)
       - [4.4 Atributos de enlace](#44-atributos-de-enlace)
   - [5. Herramientas para la creación de diagramas de clases](#5-herramientas-para-la-creación-de-diagramas-de-clases)
@@ -160,7 +160,7 @@ En relaciones de asociación, composición y agregación también se puede indic
 
 ![](img/ClientePedido.png)
 
-### 4.1 Cardinalidad
+### 4.2 Cardinalidad
 La cardinalidad de una relación representa cuantos objetos de una clase se van a relacionar con objetos de otra clase. En una relación hay dos cardinalidades, una para cada extremo de la relación y pueden tener los siguientes valores:
 
 | Cardinalidad | Significado |
@@ -180,7 +180,9 @@ En  este ejemplo vemos que un profesor puede impartir uno o varios módulos, mie
 
 ![](img/Clases4.png)
 
-### 4.2 Relación de herencia
+En ocasiones se omite la cardinalidad, en esos casos se entiende que es un 1.
+
+### 4.3 Relación de herencia
 
 La herencia es una propiedad que permite a los objetos ser construidos a partir de otros objetos, es decir, la capacidad de un objeto para utilizar estructuras de datos y métodos presentes en sus antepasados.
 
