@@ -148,7 +148,7 @@ Es posible establecer relaciones unarias de una clase consigo misma. En el ejemp
 
 Una **clase de asociación** es una clase que forma parte de una relación de asociación entre otras dos clases. Se puede adjuntar una clase de asociación a una relación de asociación para proporcionar información adicional sobre la relación. Una clase de asociación es idéntica a otras clases y puede contener operaciones, atributos, así como otras asociaciones.
 
-Por ejemplo, una clase llamada Estudiante representa a un estudiante y tiene una asociación con una clase llamada Curso, que representa un curso educativo. La clase Estudiante puede inscribirse en un curso. Una clase de asociación llamada Inscripción define aún más la relación entre las clases de Estudiante y Curso al proporcionar información de sección, calificación y semestre relacionada con la relación de asociación.
+Por ejemplo, una clase llamada Estudiante representa a un estudiante y tiene una asociación con una clase llamada Curso, que representa un curso educativo. La clase Estudiante puede inscribirse en un curso. Una clase de asociación llamada Matrícula define aún más la relación entre las clases de Estudiante y Curso al proporcionar información de sección, calificación y semestre relacionada con la relación de asociación.
 
 Como ilustra la siguiente figura, una clase de asociación está conectada a una asociación mediante una línea punteada.
 
@@ -234,9 +234,6 @@ Existen muchas herramientas para crear diagramas de clases. Algunas de las más 
 > Actividad 2: creación de diagramas de clase.
 
 
-> Actividad 3: generración de código a partir de diagramas de clases.
-
-
-> Actividad 4: generación de diagramas de clases a partir de código.
-
-
+> Actividad 3: creación de diagramas de clase.
+> 
+>  Actividad 4: generración de código a partir de diagramas de clases y generación de diagramas de clases a partir de código.
