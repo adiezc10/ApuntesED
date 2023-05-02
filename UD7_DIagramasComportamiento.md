@@ -3,7 +3,6 @@
 - [UD7 - Elaboración de diagramas de comportamiento](#ud7---elaboración-de-diagramas-de-comportamiento)
   - [1. Diagramas de casos de uso](#1-diagramas-de-casos-de-uso)
   - [2. Diagramas de estados](#2-diagramas-de-estados)
-  - [3. Diagramas de actividades](#3-diagramas-de-actividades)
 
 Los diagramas de comportamiento UML sirven para visualizar el comportamiento dinámico de un sistema. Reflejan como cambian a lo largo del tiempo determinadas actividades del sistema.
 
@@ -67,9 +66,5 @@ A contianuación se muestra un ejemplo de diagrama de estados por los que puede 
 
 ![](img/EstadosPuerta.png)
 
-## 3. Diagramas de actividades
 
-Muestra el paso a paso de las diferentes actividades del sistema. Se utilizan para modelar el comportamiento de determinados procesos del sistema, modelar el comportamiento de procesos complejos que engloben varios subprocesos y representar el flujo de negocio del sistema.
-
-![](img/DiagramaFlujo.png)
 
