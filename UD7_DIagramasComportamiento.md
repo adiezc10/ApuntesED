@@ -9,7 +9,6 @@ Los diagramas de comportamiento UML sirven para visualizar el comportamiento din
 
 Se utilizan para entender el comportamiento que deben tener determinados procesos y mostrar el funcionamiento global del sistema a través de los diferentes procesos que ejecuta.
 
-
 ## 1. Diagramas de casos de uso
 
 Los Casos de Uso describen el comportamiento de un sistema desde el punto de vista del usuario. Se utiliza para describir la funcionalidad del sistema independientemente de la implementación.
