@@ -90,6 +90,8 @@ Para trabajar con un repositorio remoto es necesario conocer varios conceptos:
 - __pull__: hacer un fetch seguido de un merge, con una rama remota dada. Recibir los cambios del repositorio remoto. Es conveniente ejecutar este comando antes de realizar ningún cambio en el código para evitar conflictos.
 - __push__: enviar los objetos de la rama local que no están en la rama remota a la que hace referencia el pull, y actualizar la cabeza de la rama remota. Es la acción complementaria de pull. Si la cabeza de la rama remota no es un ancestro de la cabeza de la rama local, el push falla*. Debemos especificar a que servidor remoto y que en rama queremos subirlos. git push origin master. Con el parámetro -u, indicaremos que ese es el server y la rama por defecto si no los especificamos. git push -u origin master. El servidor remoto recibe en el comando el nombre de origin y la rama por defecto es la rama master.
 
+[Instrcciones Git](instruccionesGit.md)
+
 ## 4. GitHub
 GitHub es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para el desarrollo de software. El código de los proyectos alojados en GitHub se almacena generalmente de forma pública.
 
