@@ -295,20 +295,20 @@ El trabajo con imágenes en markdown se hace practicamente igual que los enlaces
 
 
 ```markdown
-![GNU](imagenes/GNU.jpeg "Logo de GNU")
+![GNU](img/GNU.jpeg "Logo de GNU")
 ```
 Lo cual nos muestra como resultado
 
-![GNU](imagenes/GNU.jpeg "Logo de GNU")
+![GNU](img/GNU.jpeg "Logo de GNU")
 
 Podría hasta hacer que esta imagen sea un enlace a la página de GNU usando este código
 
 ```markdown
-[![GNU](imagenes/GNU.png)](https://www.gnu.org/home.es.html "Logo de enlace a GNU")
+[![GNU](img/GNU.png)](https://www.gnu.org/home.es.html "Logo de enlace a GNU")
 ```
 Lo cual nos muestra como resultado
 
-[![GNU](imagenes/GNU.png)](https://www.gnu.org/home.es.html "Logo de enlace a GNU")
+[![GNU](img/GNU.png)](https://www.gnu.org/home.es.html "Logo de enlace a GNU")
 
 
 ---
