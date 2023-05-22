@@ -170,7 +170,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author cic
+ * @author author
  */
 public class Ejercicio2 {
 
@@ -254,13 +254,11 @@ Existen diversos tipos de enlaces posibles en markdown.
 
     Tenemos la posibiladad de realizar un enlace directamente rodeando el enlace directamente con < >
 
-    Así por ejemplo puedo hacer un enlace directo a mi correo escribiendo `<carmen.izacastanedo@iesmiguelherrero.es>`
+    Así por ejemplo puedo hacer un enlace directo a mi correo escribiendo `<correoprueba@prueba.es>`
 
-    <carmen.izacastanedo@iesmiguelherrero.es>
+    <correoprueba@prueba.es>
     
-     o introducir directamente la dirección sin usar nada carmen.izacastanedo@iesmiguelherrero.es
-
-    
+     o introducir directamente la dirección sin usar nada correoprueba@prueba.es
 
 Comentar que con los enlaces existen opciones como dar formato al enlace, por ejemplo poniendolo en negrita, usando la sintaxis ya conocida, o que puedo poner un título al enlace para que nos aparezca al pasar con el cursor or encima. Esto último se logra añadiendo la descripción entrecomillada al final, después del parentesis.
 
@@ -357,8 +355,6 @@ Con el siguiente resultado
 Os dejo un enlace a un generador de tablas para diversos lenguajes de marcado
 
 https://www.tablesgenerator.com/markdown_tables
-
-
 
 
 [1]:https://www.gnu.org/home.es.html "Este es el anlace a GNU"
