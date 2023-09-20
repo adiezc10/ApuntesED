@@ -1,6 +1,7 @@
 # Elementos para el desarrollo de software
 
 ## Contenidos
+
 -	Concepto de programa informático
 -	Código fuente, código objeto y código ejecutable; máquinas virtuales.
 -	Tipos de lenguajes de programación.
