@@ -44,6 +44,9 @@ La definición técnica de software más extendida es la del IEEE:
 > Es el conjunto de los programas de cómputo, procedimientos, reglas, documentación y datos asociados, que forman parte de las operaciones de un sistema de computación.
 (Extraído del estándar 729 del IEEE8)
 
+:question: ¿Qué es el IEEE? ¿Y el estándar 729?
+
+
 El **software** es el conjunto de programas informáticos que actúan sobre el hardware para ejecutar lo que el usuario desee. 
 
 Por lo tanto, los programas son un subconjunto del software.
