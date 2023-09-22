@@ -74,8 +74,6 @@ Para entender el concepto de software vamos a conocer los componentes de un orde
 
 ![Arquitectura ordenador](img/Arquitectura_von_Neumann.png)
 
-:pencil: Hacer actividad 1
-
 ### 1.1 Programa informático
 
 Un **programa** es un conjunto de instrucciones que se ejecutan en la CPU de manera secuencial para realizar determinadas tareas. Cada **instrucción** es un conjunto de bytes que realiza una tarea concreta.
@@ -86,7 +84,7 @@ Ejemplos de instrucciones:
 - Ejecutar una operación sobre dos datos
 - Mostrar un dato en la pantalla
 
-Podemos clasificar los programas según su función como software de sistema, de progrmación y de aplicación.
+Podemos clasificar los programas según su función como software de sistema, de programación y de aplicación.
 
 -  El **software del sistema** se encarga de administrar el hardware e interacturar con el usuario. Debe estar instalado y configurado en nuestro ordenador para que las aplicaciones puedan ejecutarse y funcionar. El principal tipo de software de sistema es el sistema operativo. 
 
@@ -102,6 +100,10 @@ Algunos ejemplos de sistemas operativos son: Windows, Linux, Mac. Las funciones 
 - El **software de aplicación** es el conjunto de programas que tienen una finalidad más o menos concreta. Son ejemplos de aplicaciones: un procesador de textos, una hoja de cálculo, el software para reproducir música, un videojuego, etc.
 
     ![Tipos de software](img/TiposSoftware.png "Tipos de software")
+
+:question: Ordena el software de la lista que realizaste según la calisifación anterior. Si en alguna clasifiación no tienes ejemplos busca opciones.
+
+:pencil: Hacer actividad 1
 
 ## 2. Lenguajes de programación 
 
@@ -218,6 +220,8 @@ Ventajas de la POO:
 
 Actividad: Clasificar lenguajes de programación estructurados y orientados a objetos
 
+:pencil: Hacer actividad 2
+
 ## 3. Código fuente, objeto y ejecutable
 
 Los programas antes de ser ejecutados deben ser "traducidos" a un idioma que entienda la máquina. Por ello utilizamos programas externos asociados al lenguaje programación del programa y a la arquitectura del ordenador para majenar la "traducción" de los mismos.
@@ -256,8 +260,6 @@ Clasificación de los lenguajes de programación según su forma de ejecución:
 - Lenguajes virtuales
     - Funcionamiento similar a lenguajes compilados pero en vez de generar un código objeto genera un “bytecode”.
     - El bytecode puede ser interpretado por cualquier arquitectura que tenga la *máquina virtual* correspondiente.
-
-:pencil: Hacer actividad 2
 
 ## 4. Máquinas virtuales
 
