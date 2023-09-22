@@ -46,10 +46,15 @@ La definición técnica de software más extendida es la del IEEE:
 
 :question: ¿Qué es el IEEE? ¿Y el estándar 729?
 
-
 El **software** es el conjunto de programas informáticos que actúan sobre el hardware para ejecutar lo que el usuario desee. 
 
 Por lo tanto, los programas son un subconjunto del software.
+
+:question: ¿Cuál es la diferencia entre programa y aplicación?
+
+:question: ¿Qué diferencias hay entre software y sistema operativo?
+
+:question: ¿Qué programas, aplicaciones, software utilizas a diario? Haz una lista.
 
 Para entender el concepto de software vamos a conocer los componentes de un ordenador:
 
@@ -61,11 +66,11 @@ Para entender el concepto de software vamos a conocer los componentes de un orde
 2. **Memoria principal o RAM**: es una memoria de almacenamiento a corto plazo. El sistema operativo de ordenadores u otros dispositivos utiliza la memoria RAM para almacenar de forma temporal todos los programas y sus procesos de ejecución​. En la RAM se cargan todas las instrucciones que ejecuta la unidad central de procesamiento (CPU) y otras unidades del ordenador, además de contener los datos que manipulan los distintos programas.
 
 3. **Unidad de entrada/salida**: permite la comunicación del ordenador con dispositivos externos. La información se transfiere mediante periféricos, que pueden clasificarse como:
-    - De entrada: captan y digitalizan los datos introducidos por el usuario o por otro dispositivo y los envían al ordenador para ser procesados. Ejemplo: teclado.
-    - De salida: muestran o proyectan información hacia el exterior del ordenador. Ejemplo: monitor.
-    - De entrada/salida: sirven para la comunicación de la computadora con el medio externo.
+    - **De entrada**: captan y digitalizan los datos introducidos por el usuario o por otro dispositivo y los envían al ordenador para ser procesados. Ejemplo: teclado.
+    - **De salida**: muestran o proyectan información hacia el exterior del ordenador. Ejemplo: monitor.
+    - **De entrada/salida**: sirven para la comunicación de la computadora con el medio externo.
 
-:speech_balloon: Menciona un periférico de entrada/salida que conozcas.
+:question: ¿Qué periféricos de entrada/salida conoces?
 
 ![Arquitectura ordenador](img/Arquitectura_von_Neumann.png)
 
