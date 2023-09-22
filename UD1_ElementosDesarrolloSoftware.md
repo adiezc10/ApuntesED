@@ -218,8 +218,6 @@ Ventajas de la POO:
 - El código es más reutilizable.
 - Los errores se localizan y se depuran con facilidad.
 
-Actividad: Clasificar lenguajes de programación estructurados y orientados a objetos
-
 :pencil: Hacer actividad 2
 
 ## 3. Código fuente, objeto y ejecutable
