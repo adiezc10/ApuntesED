@@ -35,6 +35,7 @@
     - [6.4 Modelo en espiral :cyclone:](#64-modelo-en-espiral-cyclone)
     - [6.3 Metodologías ágiles :fallen\_leaf:](#63-metodologías-ágiles-fallen_leaf)
       - [Scrum](#scrum)
+      - [Ejemplo de aplicación de la metodología Scrum:](#ejemplo-de-aplicación-de-la-metodología-scrum)
 
 ## 1. El software y su relación con otras partes del ordenador
 
@@ -457,4 +458,15 @@ Los pilares de Scrum son:
 
 ![Scrum](img/Scrum.png)
 
+#### Ejemplo de aplicación de la metodología Scrum:
+
+Imagina que estás trabajando en un proyecto para desarrollar una nueva aplicación móvil. La metodología Scrum se puede aplicar con los siguientes pasos:
+
+- En la reunión de planificación del Sprint, seleccionas las tareas más prioritarias del Product Backlog (por ejemplo, diseñar la interfaz de usuario, implementar una característica específica, etc.) para trabajar en ellas durante el próximo Sprint.
+- Durante el Sprint, tu equipo trabaja en las tareas seleccionadas. Cada día, te reúnes con tu equipo en un Daily Scrum para discutir lo que cada miembro ha logrado, lo que planea hacer a continuación y si hay algún obstáculo en su camino.
+- Al final del Sprint, presentas la aplicación con las nuevas características al Product Owner y a los interesados durante la revisión del Sprint.
+- Luego realizas una retrospectiva del Sprint para discutir cómo fue el último Sprint y cómo puedes mejorar en el próximo.
+
 :pencil: Hacer actividad 5
+
+:pencil: Hacer actividad 6
