@@ -60,7 +60,9 @@ Esto nos lleva a las tres secciones principales de un proyecto de Git serán:
 Teniendo en cuenta los tres estados y las tres secciones principales de Git, el flujo de trabajo nuestro será:
 
 1)	Modificar archivos en nuestro Directorio de Trabajo.
+
 2)	Preparas los archivos, añadiéndolos al Área de Preparación.
+
 3)	Confirmar los cambios, que consistirá en coger los archivos tal y como están en el Área de preparación y almacenar las instantáneas de forma permanente en el directorio de Git.
 
 ![Git](img/git1.png)
