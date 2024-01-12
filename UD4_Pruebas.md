@@ -2,6 +2,7 @@
 
 - [UD4 - Diseño y realización de pruebas](#ud4---diseño-y-realización-de-pruebas)
   - [1. Introducción a las pruebas de software](#1-introducción-a-las-pruebas-de-software)
+    - [La importancia de realizar pruebas de código, ejemplos](#la-importancia-de-realizar-pruebas-de-código-ejemplos)
   - [2. Estrategia de las pruebas de software](#2-estrategia-de-las-pruebas-de-software)
     - [2.1. Pruebas unitarias](#21-pruebas-unitarias)
     - [2.2. Pruebas de integración](#22-pruebas-de-integración)
@@ -27,32 +28,68 @@
 ## 1. Introducción a las pruebas de software
 Las pruebas de software forman parte de una de las fases del ciclo de vida del software y tratan de detectar defectos cometidos en fases anteriores.
 
+### La importancia de realizar pruebas de código, ejemplos
+
+> **Explosión del Ariane 5 (1996):**
+> 
+> En el vuelo inaugural del Ariane 5, un cohete espacial europeo, la nave experimentó una desviación crítica debido a un error en el software. El software utilizaba variables de punto flotante de 64 bits para representar la velocidad horizontal, lo que llevó a un desbordamiento de datos. Este error, proveniente del software utilizado en el Ariane 4, no fue detectado durante las pruebas de sistema y contribuyó a la destrucción del cohete y su carga útil.
+>
+> Vídeo: [TBT Launch: Ariane 5 Flight 501 (6-4-1996)](https://www.youtube.com/watch?v=fCnO-UYF3co).
+
+> **Caída de la Bolsa de Valores de Nueva York (2010):**
+> 
+> El 6 de mayo de 2010, se produjo el llamado "Flash Crash" en la Bolsa de Valores de Nueva York. Un algoritmo de trading de alta frecuencia contribuyó a una caída masiva del mercado, eliminando casi un billón de dólares en valor de mercado en minutos. Este incidente se debió a problemas en el diseño y la prueba del algoritmo, que no tuvo en cuenta adecuadamente la interacción con otros sistemas y la volatilidad del mercado.
+> 
+> ![Caída de la Bolsa de Valores de Nueva York (2010)](img/flashcrash2010.png)
+
+> **Fallo del Therac-25 (1985-1987):**
+> 
+> El Therac-25 era un sistema de radioterapia utilizado para el tratamiento de cáncer. Debido a fallos en el software y la falta de pruebas adecuadas, varios pacientes recibieron dosis de radiación extremadamente altas, causando lesiones graves e incluso la muerte en algunos casos. Los problemas incluyeron errores en la interfaz de usuario y la gestión de recursos compartidos que no fueron detectados durante el desarrollo y las pruebas.
+> 
+> Vídeo: [El Software Que (A Veces) Te Mataba Con Radiación](https://www.youtube.com/watch?v=v5mfyj0S2Ss).
+
 El objetivo de las pruebas de software es la validación y verificación del mismo. 
 - **Validación**: se realiza al finalizar por completo el desarrollo para determinar si satisfacen los requisitos especificados. 
 - **Verificación**: se realiza al final de cada fase para comprobar el cumplimiento de los requisitos de esa fase.
 
-> **Ejemplo de la importancia de realizar pruebas de código**
-> 
-> ARIANE 5 es un cohete de un solo uso diseñado para colocar satélites en órbita geoestacionaria y para enviar cargas a órbitas bajas. El vuelo 501 (04/06/1996) fue la primera prueba de vuelo del sistema de lanzamiento del Ariane 5. Fracasó porque 37 segundos después del lanzamiento, la lanzadera explotó debido al mal funcionamiento del software de control. El motivo de la explosión fue un fallo de software, el módulo de control no se había probado lo suficiente.
->
-> Vídeo: [TBT Launch: Ariane 5 Flight 501 (6-4-1996)](https://www.youtube.com/watch?v=fCnO-UYF3co).
-
-Esisten dos aspectos a los que hay que prestar atención para realizar pruebas en el software, en ellos hay que considerar:
-1. La **estrategia de aplicación de las pruebas**, donde se fijan los elementos que van testear. (Punto 2 de esta unidad)
-2. Las **técnicas de diseño de casos de prueba** que se van a utilizar para cada uno de los elementos seleccionados. (Punto 3 de esta unidad)
+Existen dos aspectos a los que hay que prestar atención para realizar pruebas en el software, en ellos hay que considerar:
+1. La **estrategia de aplicación de las pruebas**, donde se fijan los elementos que van testear. (Apartado 2 de esta unidad)
+2. Las **técnicas de diseño de casos de prueba** que se van a utilizar para cada uno de los elementos seleccionados. (Apartado 3 de esta unidad)
 
 Otro concepto importante relacionado con las pruebas de código es la **depuración**, que es el proceso de identificar y corregir errores de programación.​ Es conocido también por el término inglés _debugging_, cuyo significado es "eliminación de bugs", manera en que se conoce informalmente a los errores de programación.
 
 ## 2. Estrategia de las pruebas de software
-Las pruebas siempre se empiezan porlas partes pequeñas de la aplicación y se va incrementando poco a poco el alcance. Las pruebas que se suelen realizar son unitarias, de integración, de sistema y de validación y suelen realizarse secuencialmente.
+Las pruebas siempre se empiezan por las partes pequeñas de la aplicación y se va incrementando poco a poco el alcance. Las pruebas que se suelen realizar son unitarias, de integración, de sistema y de validación y suelen realizarse secuencialmente.
 
 ### 2.1. Pruebas unitarias
 Las pruebas unitarias son las primeras a las que se somete nuestro software y prueban las clases u objetos de nuestro código. En programación orientada a objetos, además de las clases tendremos que probar los métodos individualmente.
 
 ### 2.2. Pruebas de integración
 En las pruebas de integración se comprueba si las clases que forman nuestro programa funcionan correctamente cuando interactuan. Se pueden realizar siguiendo dos estrategias diferentes:
-- Prueba basada en hebra: integra el conjunto de clases requeridas para responder a una entrada concreta.
-- Prueba basada en uso: primero prueba el funcionamiento de las clases independientes y después el de las dependientes de las anteriores.
+
+- Integración descendente (Top-Down):
+  - Comienza probando los módulos más externos o superiores del sistema.
+  - Se utilizan stubs (simulaciones de módulos no desarrollados) para simular la funcionalidad de los módulos aún no implementados.
+
+- Integración ascendente (Bottom-Up): 
+  - Se inicia probando los módulos más básicos o fundamentales.
+  - Se emplean drivers (controladores) para simular la funcionalidad de los módulos superiores aún no implementados.
+
+- Integración incremental:
+  - Los módulos se integran y prueban de manera gradual y secuencial.
+  - Cada nuevo módulo agregado se prueba inmediatamente.
+
+- Integración de Big Bang:
+  - Todos los módulos se integran simultáneamente.
+  - Se prueba el sistema completo después de la integración.
+
+- Integración de interface:
+  - Se enfoca en probar las interfaces entre los módulos para garantizar la correcta comunicación.
+  - Asegura que los datos y las funciones compartidas entre los módulos se transmitan adecuadamente.
+
+- Integración del Cliente-Servidor:
+  - Se concentra en verificar la integración entre las partes cliente y servidor de una aplicación distribuida.
+  - Garantiza una comunicación fluida y eficiente entre ambas partes.
 
 ### 2.3. Pruebas de sistema
 Las pruebas de sistema comprueban el funcionamiento de un sistema integrado de hardware y software para comprobar si cumplpe los requisitos especificados. Se comprueban los requisitos funcionales y no funcionales, la documentación de usuario y el rendimiento del programa.
