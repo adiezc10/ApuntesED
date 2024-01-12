@@ -66,27 +66,21 @@ Las pruebas unitarias son las primeras a las que se somete nuestro software y pr
 
 ### 2.2. Pruebas de integración
 En las pruebas de integración se comprueba si las clases que forman nuestro programa funcionan correctamente cuando interactuan. Se pueden realizar siguiendo dos estrategias diferentes:
-
 - Integración descendente (Top-Down):
   - Comienza probando los módulos más externos o superiores del sistema.
   - Se utilizan stubs (simulaciones de módulos no desarrollados) para simular la funcionalidad de los módulos aún no implementados.
-
 - Integración ascendente (Bottom-Up): 
   - Se inicia probando los módulos más básicos o fundamentales.
   - Se emplean drivers (controladores) para simular la funcionalidad de los módulos superiores aún no implementados.
-
 - Integración incremental:
   - Los módulos se integran y prueban de manera gradual y secuencial.
   - Cada nuevo módulo agregado se prueba inmediatamente.
-
 - Integración de Big Bang:
   - Todos los módulos se integran simultáneamente.
   - Se prueba el sistema completo después de la integración.
-
 - Integración de interface:
   - Se enfoca en probar las interfaces entre los módulos para garantizar la correcta comunicación.
   - Asegura que los datos y las funciones compartidas entre los módulos se transmitan adecuadamente.
-
 - Integración del Cliente-Servidor:
   - Se concentra en verificar la integración entre las partes cliente y servidor de una aplicación distribuida.
   - Garantiza una comunicación fluida y eficiente entre ambas partes.
