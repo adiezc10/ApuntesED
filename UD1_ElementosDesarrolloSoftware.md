@@ -287,8 +287,6 @@ Una máquina virtual es un software que simula un sistema de computación y pued
 
 :pencil: Hacer actividad 3
 
-:pencil: Hacer actividad 4 (hacer al final de la unidad)
-
 ## 5. Desarrollo de software
 
 El desarrollo de software es el proceso complejo que va desde que se concibe una idea hasta que el programa se encuentra en funcionamiento. 
@@ -469,6 +467,8 @@ Imagina que estás trabajando en un proyecto para desarrollar una nueva aplicaci
 - Durante el Sprint, tu equipo trabaja en las tareas seleccionadas. Cada día, te reúnes con tu equipo en un Daily Scrum para discutir lo que cada miembro ha logrado, lo que planea hacer a continuación y si hay algún obstáculo en su camino.
 - Al final del Sprint, presentas la aplicación con las nuevas características al Product Owner y a los interesados durante la revisión del Sprint.
 - Luego realizas una retrospectiva del Sprint para discutir cómo fue el último Sprint y cómo puedes mejorar en el próximo.
+
+:pencil: Hacer actividad 4 
 
 :pencil: Hacer actividad 5
 
