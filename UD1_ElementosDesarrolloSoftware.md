@@ -126,10 +126,9 @@ Los lenguajes de programación se pueden clasificar según su **cercanía al len
 
 - **De bajo nivel**: Es el único lenguaje de programación que entiende directamente la máquina. Utiliza una secuencia de bits (0 y 1) para comunicarse con el hardware de la máquina. Es un lenguaje no interpretable por nosotros.
     
-    Ejemplo: Ensamblador. Las instrucciones en ensamblador suelen tener traducción directa en lenguaje máquina. Opera directamente con los registros y direcciones de memoria. Es propio de cada procesador.
+    _Ejemplo_: Ensamblador. Las instrucciones en ensamblador suelen tener traducción directa en lenguaje máquina. Opera directamente con los registros y direcciones de memoria. Es propio de cada procesador.
 
-
-    Ejemplo de subrutina en ensamblador que realiza una cuenta de 0,5 segundos mediante la interrupción del timer.
+    _Ejemplo de subrutina en ensamblador_ que realiza una cuenta de 0,5 segundos mediante la interrupción del timer.
 ``` armasm
  ORG	8030H
  include
@@ -147,7 +146,7 @@ Los lenguajes de programación se pueden clasificar según su **cercanía al len
  RET
 ```
 
-Ejemplo de código en lenguaje máquina y en ensamblador:
+_Ejemplo_ de código en lenguaje máquina y en ensamblador:
 
 ![Lenguaje máquina](img/LenguajeMaquinaEnsamblador.png "Ejemplo de código en lenguaje máquina y en ensamblador")
 
@@ -282,7 +281,7 @@ Una máquina virtual es un software que simula un sistema de computación y pued
     ![JVM](img/JVM.png)
 
 
-    Ejemplo de desarrollo en JAVA
+    _Ejemplo de desarrollo en JAVA_
 
     ![Ejemplo de desarrollo en Java](img/DesarrolloJava.png)
 
