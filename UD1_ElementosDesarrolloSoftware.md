@@ -102,7 +102,7 @@ Algunos ejemplos de sistemas operativos son: Windows, Linux, Mac. Las funciones 
 
     ![Tipos de software](img/TiposSoftware.png "Tipos de software")
 
-:question: Ordena el software de la lista que realizaste según la calisifación anterior. Si en alguna clasifiación no tienes ejemplos busca opciones.
+:question: Ordena el software de la lista que realizaste según la clasifación anterior. Si en alguna clasifiación no tienes ejemplos busca opciones en el equipo de clase.
 
 :pencil: Hacer actividad 1
 
@@ -226,9 +226,13 @@ Ventajas de la POO:
 Los programas antes de ser ejecutados deben ser "traducidos" a un idioma que entienda la máquina. Por ello utilizamos programas externos asociados al lenguaje programación del programa y a la arquitectura del ordenador para majenar la "traducción" de los mismos.
 
 Distinguimos  3 tipos de código por los que pasará el programa antes de ser ejecutado:
-- **Código fuente**: conjunto de instrucciones escritas en un determinado lenguaje de programación. 
-- **Código objeto**: código resultante de compilar o traducir el código fuente Puede ser código máquina o bytecode
-- **Código ejecutable**: código resultante de enlazar nuestro código objeto con las librerías. Es nuestro programa ejecutable.
+- **[Código fuente](https://es.wikipedia.org/wiki/C%C3%B3digo_fuente)**: conjunto de instrucciones escritas en un determinado lenguaje de programación. 
+- **[Código objeto](https://es.wikipedia.org/wiki/C%C3%B3digo_objeto)**: código resultante de compilar o traducir el código fuente Puede ser código máquina o bytecode
+- **[Código ejecutable](https://es.wikipedia.org/wiki/Ejecutable)**: código resultante de enlazar nuestro código objeto con las librerías. Es nuestro programa ejecutable.
+
+La transformación de código fuente a ejecutable generalmente se realiza en tres fases:
+
+![](https://upload.wikimedia.org/wikipedia/commons/e/e2/Fuente.png)
 
 Dependiendo de como se realice este proceso de transformación del código hay dos tipos de traductores:
 
