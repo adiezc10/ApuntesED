@@ -470,8 +470,4 @@ Imagina que estás trabajando en un proyecto para desarrollar una nueva aplicaci
 - Al final del Sprint, presentas la aplicación con las nuevas características al Product Owner y a los interesados durante la revisión del Sprint.
 - Luego realizas una retrospectiva del Sprint para discutir cómo fue el último Sprint y cómo puedes mejorar en el próximo.
 
-:pencil: Hacer actividad 4 
-
-:pencil: Hacer actividad 5
-
-:pencil: Hacer actividad 6
+:pencil: Hacer actividad 4 (test de repaso)
