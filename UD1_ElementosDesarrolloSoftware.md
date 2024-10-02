@@ -459,6 +459,8 @@ Los pilares de Scrum son:
 
 ![Scrum](img/Scrum.png)
 
+![ReglasScrum](img/ReglasSCRUM.jpg)
+
 #### Ejemplo de aplicación de la metodología Scrum:
 
 Imagina que estás trabajando en un proyecto para desarrollar una nueva aplicación móvil. La metodología Scrum se puede aplicar con los siguientes pasos:
