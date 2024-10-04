@@ -21,7 +21,7 @@ La principales tareas que nos facilita el uso de un EDI son:
 - La refactorización u optimización de código.
 - La integración con plataformas de control de versiones.
 
-En la actividad 4 del tema anterior hemos visto el proceso para crear y ejecutar un programa en Java sin usar un EDI.
+En la unidad anterior hemos visto el proceso para crear y ejecutar un programa en Java, en esta unidad vamos a instalar y utilizar lo necesario para realizar este proceso.
 
 Para crear y ejecutar programas en Java necesitamos tener instalado el JDK y el JRE, usemos o no EDI.
 - El **JDK (Java Development Kit)** es un software que provee herramientas de desarrollo para la creación de programas en Java.
