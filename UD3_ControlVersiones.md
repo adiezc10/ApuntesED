@@ -22,13 +22,12 @@ Cuenta con un repositorio central al que se accede mediante un cliente en su má
 
 ![arquitectura centralizada](img/arquitectura_centralizada.jpg)
 
-
 - __Arquitectura distribuida__: Cada usuario tiene una copia completa del repositorio. Esto significa que, si el servidor principal se pierde, cualquier usuario puede restaurarlo a partir de su copia.
 
 Cada usuario tiene su propio repositorio, por ello, cada vez que se descarga una versión del proyecto se hace una copia de seguridad completa de todos los datos. 
 Así, si un servidor muere, cualquiera de los repositorios de los usuarios puede copiarse en el servidor para restaurarlo.
     
-    ![](img/arquitectura_distribuida.jpg)
+![](img/arquitectura_distribuida.jpg)
 
 ## 2. Control de versiones en Java
 En los proyectos Java existen varios sistemas principales de control de versiones de código abierto:
@@ -119,4 +118,3 @@ El grupo puede ser desde un reducido equipo de trabajo para un proyecto empresar
 Ver vídeo explicativo del funcionamiento de GitHub: [What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
 
 Puedes consultar más información sobre GitHub en su web [github.com](https://github.com/)
-
