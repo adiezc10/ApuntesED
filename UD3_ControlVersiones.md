@@ -98,7 +98,7 @@ Los principales comandos de Git son los siguientes:
 
 - **checkout**: Cambiar entre ramas o actualizar el directorio de trabajo.
 - **clone**: Clonar un repositorio remoto en tu máquina local.
-**add**: Añadir archivos modificados o nuevos al área de preparación.
+- **add**: Añadir archivos modificados o nuevos al área de preparación.
 - **commit**: Guardar los cambios preparados en el repositorio.
 - **fetch**: Obtener cambios desde el repositorio remoto, sin fusionarlos.
 - **pull**: Traer y fusionar cambios del repositorio remoto.
