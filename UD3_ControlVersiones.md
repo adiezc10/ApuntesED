@@ -20,8 +20,7 @@ Dentro de los VCS encontramos dos arquitecturas dependiendo de como se organice.
 
 Cuenta con un repositorio central al que se accede mediante un cliente en su máquina. Tiene un único servidor que contiene todos los archivos versionados, y varios clientes que descargan los archivos desde ese lugar central.
 
-    ![](img/arquitectura_centralizada.jpg)
-
+![arquitectura centralizada](img/arquitectura_centralizada.jpg)
 
 
 - __Arquitectura distribuida__: Cada usuario tiene una copia completa del repositorio. Esto significa que, si el servidor principal se pierde, cualquier usuario puede restaurarlo a partir de su copia.
