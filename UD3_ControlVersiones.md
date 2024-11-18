@@ -18,13 +18,13 @@ Aunque un sistema de control de versiones puede realizarse de forma manual, es m
 Dentro de los VCS encontramos dos arquitecturas dependiendo de como se organice.
 - __Arquitectura centralizada o cliente-servidor__: Un único servidor contiene todos los archivos versionados, y varios clientes acceden a este servidor para obtener y actualizar los archivos.
 
-Cuenta con un repositorio central al que se accede mediante un cliente en su máquina. Tiene un único servidor que contiene todos los archivos versionados, y varios clientes que descargan los archivos desde ese lugar central.
+  Cuenta con un repositorio central al que se accede mediante un cliente en su máquina. Tiene un único servidor que contiene todos los archivos versionados, y varios clientes que descargan los archivos desde ese lugar central.
 
 ![arquitectura centralizada](img/arquitectura_centralizada.jpg)
 
 - __Arquitectura distribuida__: Cada usuario tiene una copia completa del repositorio. Esto significa que, si el servidor principal se pierde, cualquier usuario puede restaurarlo a partir de su copia.
 
-Cada usuario tiene su propio repositorio, por ello, cada vez que se descarga una versión del proyecto se hace una copia de seguridad completa de todos los datos. 
+  Cada usuario tiene su propio repositorio, por ello, cada vez que se descarga una versión del proyecto se hace una copia de seguridad completa de todos los datos. 
 Así, si un servidor muere, cualquiera de los repositorios de los usuarios puede copiarse en el servidor para restaurarlo.
     
 ![](img/arquitectura_distribuida.jpg)
@@ -94,14 +94,13 @@ Los principales comandos de Git son los siguientes:
 
 ![](img/git.png)
 
-
-- checkout: Cambiar entre ramas o actualizar el directorio de trabajo.
-- clone: Clonar un repositorio remoto en tu máquina local.
-add: Añadir archivos modificados o nuevos al área de preparación.
-- commit: Guardar los cambios preparados en el repositorio.
-- fetch: Obtener cambios desde el repositorio remoto, sin fusionarlos.
-- pull: Traer y fusionar cambios del repositorio remoto.
-- push: Enviar cambios al repositorio remoto.
+- **checkout**: Cambiar entre ramas o actualizar el directorio de trabajo.
+- **clone**: Clonar un repositorio remoto en tu máquina local.
+**add**: Añadir archivos modificados o nuevos al área de preparación.
+- **commit**: Guardar los cambios preparados en el repositorio.
+- **fetch**: Obtener cambios desde el repositorio remoto, sin fusionarlos.
+- **pull**: Traer y fusionar cambios del repositorio remoto.
+- **push**: Enviar cambios al repositorio remoto.
 
 Puedes encontrar los comandos explicados con más detalle en el siguiente enlace: [instrucciones Git](instruccionesGit.md)
 
