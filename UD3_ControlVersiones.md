@@ -53,6 +53,8 @@ Las tres áreas principales de un proyecto de Git son:
 - **Working directory** (directorio de trabajo): Área donde editas los archivos. Proviene de una versión descomprimida del repositorio.
 - **Staging area** (área de preparación): Espacio donde se preparan los archivos antes de confirmarlos.
 
+![git local](img/Git_local.jpg)
+
 Puedes encontrar toda la documentación sobre git en su web [git-scm.com](https://git-scm.com/)
 
 ### 3.2. Flujo de trabajo en Git
@@ -86,7 +88,7 @@ Para trabajar con un repositorio remoto es necesario conocer varios conceptos:
 - __Master /Main__: nombre de la rama principal que se crea por defecto.
 - __Head__: El commit en el que está el repositorio actualmente, suele ser el último commit de la rama principal.
 
-![git remoto](img/git_remoto.jpg)
+![git remoto](img/Git_remoto.jpg)
 
 ### 3.4. Principales instrucciones de Git
 
