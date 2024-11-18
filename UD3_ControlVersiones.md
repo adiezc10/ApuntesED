@@ -86,13 +86,13 @@ Para trabajar con un repositorio remoto es necesario conocer varios conceptos:
 - __Master /Main__: nombre de la rama principal que se crea por defecto.
 - __Head__: El commit en el que está el repositorio actualmente, suele ser el último commit de la rama principal.
 
-![](img/git_remoto.jpg)
+![git remoto](img/git_remoto.jpg)
 
 ### 3.4. Principales instrucciones de Git
 
 Los principales comandos de Git son los siguientes:
 
-![](img/git.png)
+![instrucciones git](img/git.png)
 
 - **checkout**: Cambiar entre ramas o actualizar el directorio de trabajo.
 - **clone**: Clonar un repositorio remoto en tu máquina local.
@@ -107,9 +107,9 @@ Puedes encontrar los comandos explicados con más detalle en el siguiente enlace
 Para ampliar información y consolidar conceptos sobre Git es recomendable acudir a la documentación oficial ([git-scm.com](https://git-scm.com/)) y al libro de Git ([GitBook](https://git-scm.com/book/es/v2)).
 
 ## 4. GitHub
-GitHub es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para el desarrollo de software. El código de los proyectos alojados en GitHub se almacena generalmente de forma pública.
+GitHub es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para el desarrollo de software. El código de los proyectos alojados en GitHub se almacena generalmente de forma pública.
 
-![](img/GitHub.png)
+![logo github](img/GitHub.png)
 
 El objetivo de GitHub es facilitar el trabajo colaborativo, que es aquel en el cual un grupo de personas intervienen aportando sus ideas y conocimientos con el objetivo de lograr una meta común.
 El grupo puede ser desde un reducido equipo de trabajo para un proyecto empresarial o académico hasta grupos inmensos que colaboran en proyectos masivos.
