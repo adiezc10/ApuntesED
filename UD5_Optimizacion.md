@@ -31,6 +31,7 @@ Refactorizar nos ayuda a tener un código fuente sencillo y bien estructurado y 
  Ejemplo:
 
 - Código sin refactorizar:
+
 ```Java
 void printOwing(){
   printBanner();
@@ -39,6 +40,7 @@ void printOwing(){
   System.out.println("amount:"+getOutstanding());
 }
 ```
+
 **Problema**: El método `printOwing()` mezcla diferentes niveles de abstracción: muestra un banner y, además, imprime detalles directamente. Esto hace que el código sea menos claro y más difícil de mantener.
 
 - Código refactorizado:
@@ -56,6 +58,7 @@ void printDetails(double outstanding){
 ```
 
 **Solución**: Se ha extraído la parte de impresión de detalles a un nuevo método `printDetails()`.
+
 Ventajas del cambio:
 - El método `printOwing()` ahora tiene una única responsabilidad: llamar a otros métodos.
 - `printDetails()` se encarga exclusivamente de la impresión, mejorando la legibilidad.
