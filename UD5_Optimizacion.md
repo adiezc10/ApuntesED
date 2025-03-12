@@ -316,8 +316,9 @@ else {
 ```
 - __Consolidar expresiones condicionales__:Varios condicionales nos llevan al mismo resultado. Solución: Combinarlos en una sola expresión.
 
+- Sin refactorizar
+
 ```Java
-//sin refactorizar
 double disabilityAmount() {
   if (seniority < 2) {
     return 0;
@@ -331,8 +332,11 @@ double disabilityAmount() {
   // compute the disability amount
   //...
 }
+´´´
 
-//refactorizado
+- Refactorizado
+
+```java
 double disabilityAmount() {
   if (isNotEligableForDisability()) {
     return 0;
