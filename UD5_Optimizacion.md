@@ -42,6 +42,7 @@ void printOwing(){
 **Problema**: El método `printOwing()` mezcla diferentes niveles de abstracción: muestra un banner y, además, imprime detalles directamente. Esto hace que el código sea menos claro y más difícil de mantener.
 
 - Código refactorizado:
+
 ```Java
 void printOwing(){
   printBanner();
@@ -53,6 +54,7 @@ void printDetails(double outstanding){
   System.out.println("amount:"+outstanding);
 }
 ```
+
 **Solución**: Se ha extraído la parte de impresión de detalles a un nuevo método `printDetails()`.
 Ventajas del cambio:
 - El método `printOwing()` ahora tiene una única responsabilidad: llamar a otros métodos.
