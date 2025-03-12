@@ -30,24 +30,36 @@ Refactorizar nos ayuda a tener un código fuente sencillo y bien estructurado y 
 
  Ejemplo:
 
+- Código sin refactorizar:
 ```Java
-// sin aplicar refactorizacion
 void printOwing(){
   printBanner();
   //print details
   System.out.println("name: "+name);
   System.out.println("amount:"+getOutstanding());
 }
-// este código esta desorganizado una posible solución refactorizando es: 
+```
+**Problema**: El método `printOwing()` mezcla diferentes niveles de abstracción: muestra un banner y, además, imprime detalles directamente. Esto hace que el código sea menos claro y más difícil de mantener.
+
+- Código refactorizado:
+```Java
 void printOwing(){
   printBanner();
   printDetails(getOutstanding());
 }
+
 void printDetails(double outstanding){
   System.out.println("name: "+name);
-  System.out.println("amount:"+outstanding());
+  System.out.println("amount:"+outstanding);
 }
 ```
+**Solución**: Se ha extraído la parte de impresión de detalles a un nuevo método `printDetails()`.
+Ventajas del cambio:
+- El método `printOwing()` ahora tiene una única responsabilidad: llamar a otros métodos.
+- `printDetails()` se encarga exclusivamente de la impresión, mejorando la legibilidad.
+- Si hay cambios en cómo se muestran los detalles, solo necesitamos modificar `printDetails()`.
+
+
 __Los principales objetivos__ de la refactorización son:
 - Limpiar el código, mejorando la consistencia y la claridad.
 - Facilitar el mantenimiento del código, sin corregir errores ni añadir funcionalidades.
@@ -121,9 +133,8 @@ Para los identificadores podemos usar las letras anglosajonas y números de la t
 ### Técnicas de refactorización
 
 - __Tabulación__: _No_ es una técnica de refactorización en sí (ya que no se modifica código), pero es una forma de que el código sea más claro y legible.Sangrando o tabulando el código conseguimos una visión jerárquica del mismo por bloques.
-
+- Sin tabular
 ```Java
-// sin tabular
 public class Pattern{
 public static void main(String[] args){
 char last='E',alphabet='A';
@@ -136,7 +147,9 @@ System.out.println();
 }
 }
 }
-//tabulado
+```
+- Tabulado:
+```Java
 public class Pattern{
   public static void main(String[] args){
     char last='E',alphabet='A';
@@ -153,16 +166,18 @@ public class Pattern{
 - __Extraer método__ o también denominado __Sustituir bloques de código por un método__: Este patrón nos aconseja sustituir un bloque de código, por un método. De esta forma, cada vez que queramos acceder a ese bloque de código, bastaría con invocar al método. Es decir, cuando encontramos un fragmento de código que se puede agrupar. Lo incluimos dentro de un método propio indicando con su nombre la función que realiza.
 
 <div class="page"/>
-
+- Sin refactorizar:
 ```Java
-//sin refactorizar
 void printOwing(){
   printBanner();
   //print details
   System.out.println("name: "+name);
   System.out.println("amount:"+getOutstanding());
 }
-// realizada la refactorización
+```
+
+- Refactorizado:
+```Java
 void printOwing(){
   printBanner();
   printDetails(getOutstanding());
@@ -180,43 +195,49 @@ int area = alto * ancho;    // factorizado
 ```
 Además, hay que evitar los _Magic Numbers_. Un Magic Number es un valor literal (“texto” o numérico) empleado en el código sin ninguna explicación. Se deben sustituir siempre que se pueda por una constante que identifique su finalidad.
 
+- Sin refactorizar:
 ```Java
-// Sin refactorizar:
 int precioConIva = precioBase + (0.21 * precioBase);
-
-//refactorizado:
-
+```
+- Refactorizado
+```Java
 final static double IVA = 0.21;
 int precioConIva = precioBase + (IVA * precioBase);
 ```
 También, separar variables temporales: Una variable intermedia temporal la estamos usando varias veces (es decir, para calcular varios valores intermedios diferentes). No siendo una variable dentro de un bucle.La solución es crear una variable para cada valor que se calcula e intentar que el nombre de esas variables intermedias corresponda con el sentido del valor calculado.
 
 <div class="page"/>
+- Sin refactorizar
 
-```Java
-//sin refactorizar
+```java
 double temp = 2 * (alto + ancho);
 System.out.println(temp);
 temp = alto * ancho;
 System.out.println(temp);
+```
 
-// refactorizado
+- Refactorizado
+
+```java
 final double perimetro = 2 * (alto + ancho);
 System.out.println(perimetro);
 final double area = alto * ancho;
 System.out.println(area);
 ```
 - __Eliminar asignaciones a parámetros__:Un método recibe parámetros. Este problema surge cuando uno de esos parámetros cambia de valor (porque se le modifica en el código) dentro del método.La solución pasa por utilizar una variable temporal.
+- Sin refactorizar
 
 ```Java
-//sin refactorizar
 int discount(int inputVal, int quantity) {
   if (inputVal > 50) {
      inputVal -= 2;
     }
   //...
 }
-//refactorizado
+```
+- Refactorizado:
+
+```java
 int discount(int inputVal, int quantity) {
   int result = inputVal;
   if (inputVal > 50) {
@@ -227,8 +248,9 @@ int discount(int inputVal, int quantity) {
 ```
 - __Mover método__:Un método está declarado en una clase, pero se usa más en otra.La solución es declarar el método en la clase qué más se use y en la clase en la que estaba inicialmente declarado, se puede hacer distintas cosas: declarar otro similar, dejar el código sin método si solo se usa una vez o borrarlo completamente si no se usa. 
 
+- Sin refactorizar:
+
 ```Java
-//sin refactorizar
 public class BankAccount
 {
   ...
@@ -246,12 +268,14 @@ public class AccountInterest
     return Account.CalculateInterestRate(); 
   }
 }
-//refactorizado
+```
 
+- Refactorizado:
+
+```java
 public class BankAccount
 {
   ...
-
 }
 
 public class AccountInterest
@@ -269,16 +293,20 @@ public class AccountInterest
 }
 ```
 - __Descomponer un condicional__:Tenemos condicionales demasiado complejos con varias condiciones en una unidos por operadores lógicos. Solución, separar los condicionales o hacer un método que haga la comprobación y se vea más claro.
+- sin refactorizar:
 
 ```Java
-//sin refactorizar
 if (date.before(SUMMER_START) || date.after(SUMMER_END)) {
   charge = quantity * winterRate + winterServiceCharge;
 }
 else {
   charge = quantity * summerRate;
 }
-//refactorizado
+´´´
+
+- Refactorizado
+
+```java
 if (isSummer(date)) {
   charge = summerCharge(quantity);
 }
