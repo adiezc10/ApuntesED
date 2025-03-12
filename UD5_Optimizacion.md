@@ -255,7 +255,7 @@ int discount(int inputVal, int quantity) {
 
 - Sin refactorizar:
 
-```Java
+```java
 public class BankAccount
 {
   ...
@@ -300,7 +300,7 @@ public class AccountInterest
 - __Descomponer un condicional__:Tenemos condicionales demasiado complejos con varias condiciones en una unidos por operadores lógicos. Solución, separar los condicionales o hacer un método que haga la comprobación y se vea más claro.
 - sin refactorizar:
 
-```Java
+```java
 if (date.before(SUMMER_START) || date.after(SUMMER_END)) {
   charge = quantity * winterRate + winterServiceCharge;
 }
@@ -323,7 +323,7 @@ else {
 
 - Sin refactorizar
 
-```Java
+```java
 double disabilityAmount() {
   if (seniority < 2) {
     return 0;
@@ -352,7 +352,7 @@ double disabilityAmount() {
 ```
 - __Reemplazar condicional por polimorfismo__: Tenemos una expresión condicional usada para elegir entre tipos de un objeto para llevar a cabo comportamientos diferentes. La solución pasa por hacer la clase original abstracta y crear subclases de ella utilizando las características de la expresión condicional.
 
-```Java
+```java
 //sin refactorizar
 class Bird {
   //...
@@ -368,7 +368,11 @@ class Bird {
     throw new RuntimeException("Should be unreachable");
   }
 }
-// refactorizado
+´´´
+
+- Refactorizado:
+
+```java
 abstract class Bird {
   //...
   abstract double getSpeed();
@@ -392,7 +396,7 @@ class NorwegianBlue extends Bird {
 
 - __Reemplazar array por objeto__:Un array que tiene distintos tipos de datos.Debemos crear un objeto con los datos del array.
 
-```Java
+```java
 //sin refactorizar
 String[] row = new String[2];
 row[0] = "Real Madrid";
