@@ -352,8 +352,9 @@ double disabilityAmount() {
 ```
 - __Reemplazar condicional por polimorfismo__: Tenemos una expresión condicional usada para elegir entre tipos de un objeto para llevar a cabo comportamientos diferentes. La solución pasa por hacer la clase original abstracta y crear subclases de ella utilizando las características de la expresión condicional.
 
+- Sin refactorizar:
+
 ```java
-//sin refactorizar
 class Bird {
   //...
   double getSpeed() {
@@ -368,8 +369,7 @@ class Bird {
     throw new RuntimeException("Should be unreachable");
   }
 }
-´´´
-
+```
 - Refactorizado:
 
 ```java
