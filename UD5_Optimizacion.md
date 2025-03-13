@@ -138,7 +138,8 @@ Para los identificadores podemos usar las letras anglosajonas y números de la t
 ### Técnicas de refactorización
 
 - __Tabulación__: _No_ es una técnica de refactorización en sí (ya que no se modifica código), pero es una forma de que el código sea más claro y legible.Sangrando o tabulando el código conseguimos una visión jerárquica del mismo por bloques.
-- Sin tabular
+- Sin tabular:
+
 ```Java
 public class Pattern{
 public static void main(String[] args){
@@ -154,6 +155,7 @@ System.out.println();
 }
 ```
 - Tabulado:
+
 ```Java
 public class Pattern{
   public static void main(String[] args){
@@ -168,6 +170,7 @@ public class Pattern{
   }
 }
 ```
+
 - __Extraer método__ o también denominado __Sustituir bloques de código por un método__: Este patrón nos aconseja sustituir un bloque de código, por un método. De esta forma, cada vez que queramos acceder a ese bloque de código, bastaría con invocar al método. Es decir, cuando encontramos un fragmento de código que se puede agrupar. Lo incluimos dentro de un método propio indicando con su nombre la función que realiza.
 
 <div class="page"/>
@@ -307,7 +310,7 @@ if (date.before(SUMMER_START) || date.after(SUMMER_END)) {
 else {
   charge = quantity * summerRate;
 }
-´´´
+```
 
 - Refactorizado
 
@@ -337,7 +340,7 @@ double disabilityAmount() {
   // compute the disability amount
   //...
 }
-´´´
+```
 
 - Refactorizado
 
@@ -396,16 +399,22 @@ class NorwegianBlue extends Bird {
 
 - __Reemplazar array por objeto__:Un array que tiene distintos tipos de datos.Debemos crear un objeto con los datos del array.
 
+- Sin refactorizar:
+
 ```java
-//sin refactorizar
 String[] row = new String[2];
 row[0] = "Real Madrid";
 row[1] = "15";
-//refactorizado
+```
+
+- Refactorizado:
+
+```java
 Temporada row = new Temporada();
 row.setNombre("Real Madrid");
 row.setVictoria("15");
 ```
+
 - __Mover la clase__: Si es necesario, se puede mover una clase de un paquete a otro, o de un proyecto a otro. La idea es no duplicar código que ya se haya generado. Esto impone la actualización en todo el código fuente de las referencias a la clase en su nueva localización. Ejemplo si una o varias clases tienen un mismo campo de datos. Dicho campo tiene un grupo de datos con significado propio y qué son agrupables. Solución: crearemos una clase con ese campo de datos.
 
 ![imagen de mover clases](img/moverclase.png)
@@ -414,7 +423,7 @@ row.setVictoria("15");
 
 <div class="page"/>
 
-```Java
+```java
 //Sin refactorizar:
 class Person {
   get officeAreaCode() {return this._officeAreaCode;}
@@ -435,12 +444,17 @@ class TelephoneNumber {
 - __Borrado seguro__: Se debe comprobar, que cuándo un elemento del código ya no es necesario, se han borrado todas las referencias a él que había en cualquier parte del proyecto. 
 - __Campos encapsulados__: Se aconseja crear métodos getter y setter, (de asignación y de consulta) para cada campo que se defina en una clase. Cuando sea necesario acceder o modificar el valor de un campo, basta con invocar al método getter o setter según convenga.
 
-```Java
-// sin refactorizar
+- Sin refactorizar:
+
+```java
 class Persona {
   public String nombre;
 }
-//refactorizando
+```
+
+- Refactorizado:
+
+```java
 class Persona {
   private String nombre;
   public String getNombre() {
